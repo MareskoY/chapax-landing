@@ -1,5 +1,5 @@
 import Head from "next/head";
-import type { GetServerSideProps, NextApiRequest } from "next";
+import type { GetServerSideProps } from "next";
 import { useMemo } from "react";
 
 type Limits = {
@@ -178,12 +178,26 @@ export const getServerSideProps: GetServerSideProps = async ({ req }) => {
   let isRussia = false;
   try {
     if (ip) {
+      // 0) ipinfo (SDK) — prioritized if token is available
+      const token = process.env.IPINFO_TOKEN;
+      if (token) {
+        try {
+          const { default: IPinfoWrapper } = await import("node-ipinfo");
+          const ipinfo = new IPinfoWrapper(token);
+          const info = await ipinfo.lookupIp(ip);
+          const c0 = (info?.country || "").toUpperCase();
+          if (c0 === "RU") isRussia = true;
+        } catch {}
+      }
+
+      // If still not RU, try plain HTTP fallbacks
       // 1) ip2c.org (very fast plain text)
-      const r1 = await fetch(`https://ip2c.org/${encodeURIComponent(ip)}`, { cache: "no-store" });
-      const t1 = r1.ok ? await r1.text() : "";
-      // format: 1;CC;Country;Region
-      const c1 = t1 && t1[0] === "1" ? t1.split(";")[1] : "";
-      if (c1?.toUpperCase() === "RU") isRussia = true;
+      if (!isRussia) {
+        const r1 = await fetch(`https://ip2c.org/${encodeURIComponent(ip)}`, { cache: "no-store" });
+        const t1 = r1.ok ? await r1.text() : "";
+        const c1 = t1 && t1[0] === "1" ? t1.split(";")[1] : ""; // format: 1;CC;Country;Region
+        if (c1?.toUpperCase() === "RU") isRussia = true;
+      }
 
       // 2) ipapi.co country fallback
       if (!isRussia) {
