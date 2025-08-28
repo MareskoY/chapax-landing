@@ -14,6 +14,17 @@ export default function Rekvizity() {
 
         <div className="mt-8 space-y-8 text-sm sm:text-base">
           <section>
+            <h2 className="mb-3 text-base font-medium">Контакты</h2>
+            <dl className="grid grid-cols-1 gap-y-2 sm:grid-cols-3 sm:gap-3">
+              <dt className="text-muted-foreground">Телефон</dt>
+              <dd className="sm:col-span-2">+7 980 435-14-25</dd>
+
+              <dt className="text-muted-foreground">Email</dt>
+              <dd className="sm:col-span-2">nikita.bokz@outlook.com</dd>
+            </dl>
+          </section>
+
+          <section>
             <dl className="grid grid-cols-1 gap-y-2 sm:grid-cols-3 sm:gap-3">
               <dt className="text-muted-foreground">ОГРНИП</dt>
               <dd className="sm:col-span-2">321774600060085</dd>

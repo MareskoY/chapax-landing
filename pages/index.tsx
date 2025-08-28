@@ -52,6 +52,14 @@ export default function Home() {
               <div className="h-8 w-8 mask-chapa" aria-hidden />
               <span className="text-sm font-medium tracking-wider">CHAPAX</span>
             </div>
+            <nav>
+              <a
+                href="/pricing"
+                className="rounded-md border border-foreground/30 px-4 py-2 text-xs font-medium text-foreground transition-colors hover:border-foreground/50"
+              >
+                Pricing
+              </a>
+            </nav>
           </div>
         </div>
       </header>
