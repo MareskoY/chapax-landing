@@ -151,7 +151,7 @@ export default function PricingPage({ isRussia }: { isRussia: boolean }) {
           ))}
         </div>
 
-        {/* Region note intentionally removed */
+        {/* Region note intentionally removed */}
       </main>
     </div>
   );
