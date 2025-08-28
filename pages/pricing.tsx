@@ -1,7 +1,6 @@
-"use client";
-
 import Head from "next/head";
-import { useEffect, useMemo, useState } from "react";
+import type { GetServerSideProps, NextApiRequest } from "next";
+import { useMemo } from "react";
 
 type Limits = {
   messagesPerMonth: number;
@@ -18,10 +17,7 @@ type PlanInfo = {
   limits: Limits;
 };
 
-export default function PricingPage() {
-  const [countryCode, setCountryCode] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
-
+export default function PricingPage({ isRussia }: { isRussia: boolean }) {
   const freeLimits: Limits = {
     messagesPerMonth: 80,
     messagesWithFilesPerMonth: 10,
@@ -34,28 +30,6 @@ export default function PricingPage() {
     modalPerMonth: 100,
   };
 
-  useEffect(() => {
-    let cancelled = false;
-    (async () => {
-      try {
-        // ipapi.co is a simple free API; gracefully fallback to EUR if blocked
-        const res = await fetch("https://ipapi.co/json/", { cache: "no-store" });
-        if (!cancelled && res.ok) {
-          const data = await res.json();
-          setCountryCode(typeof data?.country_code === "string" ? data.country_code : null);
-        }
-      } catch {
-        // ignore; default will apply
-      } finally {
-        if (!cancelled) setLoading(false);
-      }
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
-  const isRussia = (countryCode || "").toUpperCase() === "RU";
   const currencyLabel = isRussia ? "₽ 560" : "€ 8.5";
 
   const plans: PlanInfo[] = useMemo(() => {
@@ -177,10 +151,58 @@ export default function PricingPage() {
           ))}
         </div>
 
-        {/* Region note intentionally removed */}
+        {/* Region note intentionally removed */
       </main>
     </div>
   );
 }
+
+function getIpFromHeaders(req: any): string | null {
+  const xForwardedFor = (req.headers["x-forwarded-for"] as string | undefined) || "";
+  const candidate = xForwardedFor.split(",")[0]?.trim() || (req.headers["x-real-ip"] as string | undefined) || (req.socket?.remoteAddress as string | undefined) || null;
+  if (!candidate) return null;
+  // strip IPv6 prefix if present
+  if (candidate.startsWith("::ffff:")) return candidate.replace("::ffff:", "");
+  return candidate;
+}
+
+export const getServerSideProps: GetServerSideProps = async ({ req }) => {
+  // Check common CDN headers first (Cloudflare / Vercel)
+  const cfCountry = (req.headers["cf-ipcountry"] as string | undefined)?.toUpperCase();
+  const vercelCountry = (req.headers["x-vercel-ip-country"] as string | undefined)?.toUpperCase();
+  if (cfCountry === "RU" || vercelCountry === "RU") {
+    return { props: { isRussia: true } };
+  }
+
+  const ip = getIpFromHeaders(req);
+  let isRussia = false;
+  try {
+    if (ip) {
+      // 1) ip2c.org (very fast plain text)
+      const r1 = await fetch(`https://ip2c.org/${encodeURIComponent(ip)}`, { cache: "no-store" });
+      const t1 = r1.ok ? await r1.text() : "";
+      // format: 1;CC;Country;Region
+      const c1 = t1 && t1[0] === "1" ? t1.split(";")[1] : "";
+      if (c1?.toUpperCase() === "RU") isRussia = true;
+
+      // 2) ipapi.co country fallback
+      if (!isRussia) {
+        const r2 = await fetch(`https://ipapi.co/${encodeURIComponent(ip)}/country/`, { cache: "no-store" });
+        const t2 = r2.ok ? (await r2.text()).trim() : "";
+        if (t2.toUpperCase() === "RU") isRussia = true;
+      }
+
+      // 3) ipwho.is JSON fallback
+      if (!isRussia) {
+        const r3 = await fetch(`https://ipwho.is/${encodeURIComponent(ip)}?fields=country_code`, { cache: "no-store" });
+        const j3 = r3.ok ? await r3.json() : null;
+        const c3 = (j3?.country_code || "").toUpperCase();
+        if (c3 === "RU") isRussia = true;
+      }
+    }
+  } catch {}
+
+  return { props: { isRussia } };
+};
 
 
