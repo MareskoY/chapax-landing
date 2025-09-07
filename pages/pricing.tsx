@@ -25,9 +25,9 @@ export default function PricingPage({ isRussia }: { isRussia: boolean }) {
   };
 
   const plusLimits: Limits = {
-    messagesPerMonth: 1000,
-    messagesWithFilesPerMonth: 50,
-    modalPerMonth: 100,
+    messagesPerMonth: 1500,
+    messagesWithFilesPerMonth: 100,
+    modalPerMonth: 560,
   };
 
   const currencyLabel = isRussia ? "₽ 560" : "€ 8.5";
