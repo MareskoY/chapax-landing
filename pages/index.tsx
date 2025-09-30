@@ -1,7 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Brain, Globe, Code2, Search, Sparkles, Zap } from "lucide-react";
+import ModelChatSkeleton from "../components/webapp/ModelChatSkeleton";
+import ImageEditSkeleton from "../components/webapp/ImageEditSkeleton";
+import DeepSearchSkeleton from "../components/webapp/DeepSearchSkeleton";
 
 const chatContainer = {
   hidden: { opacity: 1 },
@@ -52,14 +54,6 @@ export default function Home() {
               <div className="h-6 w-6 sm:h-8 sm:w-8 mask-chapa" aria-hidden />
               <span className="text-xs sm:text-sm font-medium tracking-wider">CHAPAX</span>
             </div>
-            <nav>
-              <a
-                href="/pricing"
-                className="rounded-md border border-foreground/30 px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] sm:text-xs font-medium text-foreground transition-colors hover:border-foreground/50"
-              >
-                Pricing
-              </a>
-            </nav>
           </div>
         </div>
       </header>
@@ -148,23 +142,26 @@ export default function Home() {
               <div className="card-surface tilt-hover p-4 sm:p-5">
                 <motion.div initial={{ opacity: 0, y: 6 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="flex items-center gap-2">
                   <Brain size={14} className="sm:w-4 sm:h-4" />
-                  <div className="text-sm font-semibold">Deep thinking workspace</div>
+                  <div className="text-sm font-semibold">Smart model routing</div>
                 </motion.div>
-                <div className="mt-2 text-sm text-muted-foreground">Outline, analyze, and iterate with structured prompts.</div>
+                <div className="mt-1.5 text-sm text-muted-foreground">Top models from any provider — automatically selected.</div>
+                <ModelChatSkeleton />
               </div>
               <div className="card-surface tilt-hover p-4 sm:p-5">
                 <motion.div initial={{ opacity: 0, y: 6 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.05 }} className="flex items-center gap-2">
-                  <Search size={14} className="sm:w-4 sm:h-4" />
-                  <div className="text-sm font-semibold">Search + browse</div>
+                  <Sparkles size={14} className="sm:w-4 sm:h-4" />
+                  <div className="text-sm font-semibold">AI image generation</div>
                 </motion.div>
-                <div className="mt-2 text-sm text-muted-foreground">Grounded answers with live web context.</div>
+                <div className="mt-1.5 text-sm text-muted-foreground">Magic Wand photo edits in seconds.</div>
+                <ImageEditSkeleton />
               </div>
               <div className="card-surface tilt-hover p-4 sm:p-5">
                 <motion.div initial={{ opacity: 0, y: 6 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.1 }} className="flex items-center gap-2">
-                  <Code2 size={14} className="sm:w-4 sm:h-4" />
-                  <div className="text-sm font-semibold">Pair coding</div>
+                  <Search size={14} className="sm:w-4 sm:h-4" />
+                  <div className="text-sm font-semibold">Real‑time data & Deep Search</div>
                 </motion.div>
-                <div className="mt-2 text-sm text-muted-foreground">Refactor, generate, and explain code with precision.</div>
+                <div className="mt-1.5 text-sm text-muted-foreground">Live search, reasoning, and grounded answers.</div>
+                <DeepSearchSkeleton />
               </div>
               {/* Duplicate CTA for mobile */}
               <a
@@ -283,13 +280,13 @@ export default function Home() {
           {/* Icon tiles with hover text */}
           <section className="relative py-8 sm:py-10 md:py-16">
             <div className="grid grid-cols-2 gap-2 sm:gap-3 sm:grid-cols-6">
-              {[
-                { icon: Brain, text: "Think deeper, decide faster" },
-                { icon: Globe, text: "Knowledge of the web, on tap" },
-                { icon: Code2, text: "Pair code without context‑switch" },
-                { icon: Search, text: "Grounded answers with live sources" },
-                { icon: Sparkles, text: "Magic Edit: write, fix, translate" },
-                { icon: Zap, text: "Speed: one‑click actions everywhere" },
+                {[
+                { icon: Brain, text: <>Think deeper, decide faster</> },
+                { icon: Globe, text: <>Knowledge of the web, on tap</> },
+                { icon: Code2, text: <>Pair code without context‑switch</> },
+                { icon: Search, text: <>Grounded answers with live sources</> },
+                { icon: Sparkles, text: <>Magic Edit: write, fix, translate</> },
+                { icon: Zap, text: <>Speed: one‑click actions everywhere</> },
               ].map((item, idx) => (
                 <div key={idx} className="group relative aspect-square overflow-hidden rounded-xl border border-foreground/10 bg-background/70">
                   <div className="absolute inset-0 grid place-items-center">
