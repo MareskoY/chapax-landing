@@ -16,20 +16,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Ensure there is an active locale on first render (CSR):
-// If a user-selected locale exists, apply it synchronously to avoid any flash.
-// Otherwise, fall back to English to keep provider non-null (temporary), real detection happens once on mount if storage is empty.
-if (typeof window !== "undefined") {
-  const pre = preactivateLocaleSync();
-  if (!pre && i18n.locale !== "en") {
-    try {
-      i18n.load("en", enMessages as any);
-      i18n.activate("en");
-    } catch {}
-  }
-}
+// (removed module-scope preactivation to avoid race with page hydration)
 
 export default function App({ Component, pageProps }: AppProps) {
+  // Ensure locale is active before first client render, using SSR-provided value when available
+  if (typeof window !== "undefined") {
+    const hinted = (pageProps as any)?.__initialLocale as string | undefined;
+    const initial = isSupportedLocale(hinted || "") ? hinted! : "en";
+    preactivateLocaleSync(initial);
+  }
   useEffect(() => {
     let cancelled = false;
     (async () => {
@@ -57,22 +52,39 @@ export default function App({ Component, pageProps }: AppProps) {
         }
       } catch {}
 
-      // 3) No cookie: detect once via API and persist
+      // 3) No cookie: detect once via API (server-side heuristics)
       try {
         const r = await fetch("/api/detect-locale", { cache: "no-store" });
         if (r.ok) {
           const j = (await r.json()) as { locale?: string; country?: string };
           const serverLocale = j?.locale && isSupportedLocale(j.locale) ? j.locale : countryCodeToLocale(j?.country || "");
-          const finalLocale = serverLocale || normalizeLocale(typeof navigator !== "undefined" ? navigator.language : "");
-          await activateLocale(finalLocale, { persist: true });
-          if (process.env.NODE_ENV === "development") {
-            console.log("[i18n] first-visit detected:", j, "=>", finalLocale);
+          if (serverLocale) {
+            await activateLocale(serverLocale, { persist: true });
+            if (process.env.NODE_ENV === "development") {
+              console.log("[i18n] first-visit detected (server):", j, "=>", serverLocale);
+            }
+            return;
           }
-          return;
         }
       } catch {}
 
-      // 4) Fallback if API fails: use navigator, persist once
+      // 4) Client-side geo fallback (use client IP): ipapi.co country → locale
+      try {
+        const r = await fetch("https://ipapi.co/country/", { cache: "no-store" });
+        const t = r.ok ? (await r.text()).trim() : "";
+        if (t) {
+          const loc = countryCodeToLocale(t);
+          if (loc) {
+            await activateLocale(loc, { persist: true });
+            if (process.env.NODE_ENV === "development") {
+              console.log("[i18n] first-visit detected (client ipapi.co):", t, "=>", loc);
+            }
+            return;
+          }
+        }
+      } catch {}
+
+      // 5) Fallback if all else fails: use navigator, persist once
       const nav = typeof navigator !== "undefined" ? navigator.language : undefined;
       const navLocale = normalizeLocale(nav || "");
       await activateLocale(navLocale, { persist: true });
@@ -105,7 +117,10 @@ App.getInitialProps = async (appContext: AppContext) => {
     if (cookieLocale && isSupportedLocale(cookieLocale)) {
       preactivateLocaleSync(cookieLocale);
       appProps.pageProps = { ...(appProps.pageProps || {}), __initialLocale: cookieLocale };
-      return appProps;
+    } else {
+      // No cookie: render SSR in English to match client's first render
+      preactivateLocaleSync("en");
+      appProps.pageProps = { ...(appProps.pageProps || {}), __initialLocale: "en" };
     }
   } catch {}
   if (typeof (appContext.Component as any).getInitialProps === "function") {

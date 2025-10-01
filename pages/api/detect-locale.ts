@@ -58,6 +58,30 @@ function countryToLocale(countryCode: string): Supported | null {
 	}
 }
 
+function acceptLanguageToLocale(al: string | undefined): Supported | null {
+  if (!al) return null;
+  try {
+    const first = al.split(",")[0]?.trim() || "";
+    const base = first.split("-")[0]?.toLowerCase() || "";
+    switch (base) {
+      case "ru":
+        return "ru";
+      case "de":
+        return "de";
+      case "fr":
+        return "fr";
+      case "es":
+        return "es";
+      case "ar":
+        return "ar";
+      default:
+        return "en";
+    }
+  } catch {
+    return null;
+  }
+}
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse<Result>) {
 	try {
 		const cfCountry = (req.headers["cf-ipcountry"] as string | undefined)?.toUpperCase();
@@ -126,8 +150,16 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
 			}
 		}
 
-		console.log("[detect-locale] ip:", ip, "country:", detectedCountry, "=>", locale || "en");
-		return res.status(200).json({ locale: locale || "en", country: detectedCountry });
+
+	// Final fallback: use Accept-Language when IP-based detection fails (common in local dev ::1)
+	if (!locale) {
+		const al = req.headers["accept-language"] as string | undefined;
+		const fromAL = acceptLanguageToLocale(al);
+		if (fromAL) locale = fromAL;
+	}
+
+	console.log("[detect-locale] ip:", ip, "country:", detectedCountry || "UNDEFINED", "=>", locale || "en");
+	return res.status(200).json({ locale: locale || "en", country: detectedCountry });
 	} catch {
 		return res.status(200).json({ locale: "en" });
 	}
