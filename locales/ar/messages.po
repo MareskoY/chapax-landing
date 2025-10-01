@@ -1,0 +1,402 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-09-30 22:34+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: ar\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:216
+msgid "Tokens explainer"
+msgstr ""
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:28
+msgid "Universal AI agent for the web"
+msgstr "وكيل ذكاء اصطناعي عالمي للويب"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:88
+msgid "Universal AI agent. On any page."
+msgstr "وكيل ذكاء اصطناعي عالمي. على أي صفحة."
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:91
+msgid "Chat, search, pair code, think deeply, and transform text with Magic Edit. Fast, minimal, and works across the web and your documents."
+msgstr "دردشة وبحث وبرمجة ثنائية وتفكير عميق وتحويل النص باستخدام Magic Edit. سريع وبسيط ويعمل عبر الويب ومستنداتك."
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:99
+#: pages/index.tsx:158
+#: pages/index.tsx:191
+msgid "Open Web App"
+msgstr "افتح تطبيق الويب"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:105
+msgid "Get Chrome Extension"
+msgstr "احصل على إضافة كروم"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:109
+msgid "Integrates with your flow. Designed to support many AI models."
+msgstr "يتكامل مع سير عملك. مصمم لدعم نماذج ذكاء اصطناعي متعددة."
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:152
+msgid "WEB APP"
+msgstr "تطبيق ويب"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:165
+msgid "Smart model routing"
+msgstr "توجيه ذكي للنماذج"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:167
+msgid "Top models from any provider — automatically selected."
+msgstr "أفضل النماذج من أي مزود — يتم اختيارها تلقائيًا."
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:173
+msgid "AI image generation"
+msgstr "توليد الصور بالذكاء الاصطناعي"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:175
+msgid "Magic Wand photo edits in seconds."
+msgstr "تعديلات صور Magic Wand في ثوانٍ."
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:181
+msgid "Real‑time data & Deep Search"
+msgstr "بيانات فورية وبحث عميق"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:183
+msgid "Live search, reasoning, and grounded answers."
+msgstr "بحث مباشر واستدلال وإجابات موثّقة."
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:201
+msgid "BROWSER EXTENSION"
+msgstr "إضافة متصفح"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:207
+#: pages/index.tsx:278
+msgid "Get Extension"
+msgstr "احصل على الإضافة"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:215
+msgid "On‑page chat"
+msgstr "دردشة على الصفحة"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:247
+msgid "Magic Edit"
+msgstr "Magic Edit"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:286
+msgid "Model‑agnostic"
+msgstr "غير معتمد على نموذج محدد"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:287
+msgid "Built to support many AI models over time."
+msgstr "مصمم لدعم العديد من نماذج الذكاء الاصطناعي."
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:290
+msgid "Works with your docs"
+msgstr "يعمل مع مستنداتك"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:291
+msgid "Bring PDFs, notes, and knowledge — stay in flow."
+msgstr "أحضر ملفات PDF والملاحظات والمعرفة — وابق في التدفق."
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:294
+msgid "One‑click actions"
+msgstr "إجراءات بنقرة واحدة"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:295
+msgid "Apply Magic Edit, copy, insert, or open in app instantly."
+msgstr "طبّق Magic Edit أو انسخ أو أدخل أو افتح في التطبيق فورًا."
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:304
+msgid "Think deeper, decide faster"
+msgstr "فكّر بعمق واتخذ القرار أسرع"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:305
+msgid "Knowledge of the web, on tap"
+msgstr "معرفة الويب في متناول يدك"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:306
+msgid "Pair code without context‑switch"
+msgstr "برمجة ثنائية دون تبديل السياق"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:307
+msgid "Grounded answers with live sources"
+msgstr "إجابات موثّقة بمصادر مباشرة"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:308
+msgid "Magic Edit: write, fix, translate"
+msgstr "Magic Edit: كتابة وإصلاح وترجمة"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:309
+msgid "Speed: one‑click actions everywhere"
+msgstr "السرعة: إجراءات بنقرة واحدة في كل مكان"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:328
+msgid "Fast. Minimal. Helpful."
+msgstr "سريع. بسيط. مفيد."
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:38
+#: pages/pricing.tsx:135
+msgid "Free"
+msgstr "مجاني"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:40
+#: pages/pricing.tsx:50
+#: pages/pricing.tsx:179
+#: pages/pricing.tsx:251
+msgid "Get in App"
+msgstr "إتمام في التطبيق"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:42
+msgid "Chat with basic models"
+msgstr "دردشة مع نماذج أساسية"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:48
+msgid "Plus"
+msgstr "بلَس"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:52
+msgid "Chat with advanced models"
+msgstr "دردشة مع نماذج متقدمة"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:53
+msgid "Priority access"
+msgstr "وصول ذو أولوية"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:63
+#: pages/pricing.tsx:97
+msgid "Pricing"
+msgstr "الأسعار"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:126
+msgid "Best to try the app"
+msgstr "الأفضل لتجربة التطبيق"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:126
+msgid "More headroom and priority"
+msgstr "سعة أكبر وأولوية أعلى"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:128
+msgid "Popular"
+msgstr "شائع"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:136
+#: pages/pricing.tsx:141
+msgid "/mo"
+msgstr "/شهر"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:148
+msgid "What you get"
+msgstr "ما الذي ستحصل عليه"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:158
+msgid "≈ chat replies"
+msgstr "≈ ردود دردشة"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:162
+msgid "≈ code edits"
+msgstr "≈ تعديلات كود"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:166
+msgid "≈ image gens"
+msgstr "≈ توليد صور"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:188
+msgid "One‑time token packs"
+msgstr "حِزم توكن لمرة واحدة"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:202
+msgid "tokens/mo"
+msgstr "توكن/شهر"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:208
+#: pages/pricing.tsx:214
+msgid "What are tokens?"
+msgstr "ما هي التوكنات؟"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:239
+msgid "tokens"
+msgstr "توكنات"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:184
+#~ msgid "A token is a unified credit used to price different AI features consistently. One token roughly equals a small chat response. Heavier tasks (coding, images) consume more tokens."
+#~ msgstr "التوكن هو رصيد موحّد لتسعير ميزات الذكاء الاصطناعي بشكل ثابت. يساوي التوكن تقريبًا ردًا صغيرًا في الدردشة. المهام الأثقل (البرمجة، الصور) تستهلك توكنات أكثر."
+
+#: pages/index.tsx:154
+#~ msgid "AI image generation"
+#~ msgstr "توليد الصور بالذكاء الاصطناعي"
+
+#: pages/index.tsx:276
+#~ msgid "Apply Magic Edit, copy, insert, or open in app instantly."
+#~ msgstr "طبّق Magic Edit أو انسخ أو أدخل أو افتح في التطبيق فورًا."
+
+#: pages/index.tsx:272
+#~ msgid "Bring PDFs, notes, and knowledge — stay in flow."
+#~ msgstr "أحضر ملفات PDF والملاحظات والمعرفة — وابق في التدفق."
+
+#: pages/index.tsx:182
+#~ msgid "BROWSER EXTENSION"
+#~ msgstr "إضافة متصفح"
+
+#: pages/index.tsx:268
+#~ msgid "Built to support many AI models over time."
+#~ msgstr "مصمم لدعم العديد من نماذج الذكاء الاصطناعي."
+
+#: pages/index.tsx:72
+#~ msgid "Chat, search, pair code, think deeply, and transform text with Magic Edit. Fast, minimal, and works across the web and your documents."
+#~ msgstr "دردشة وبحث وبرمجة ثنائية وتفكير عميق وتحويل النص باستخدام Magic Edit. سريع وبسيط ويعمل عبر الويب ومستنداتك."
+
+#: pages/index.tsx:309
+#~ msgid "Fast. Minimal. Helpful."
+#~ msgstr "سريع. بسيط. مفيد."
+
+#: pages/index.tsx:86
+#~ msgid "Get Chrome Extension"
+#~ msgstr "احصل على إضافة كروم"
+
+#: pages/index.tsx:188
+#: pages/index.tsx:259
+#~ msgid "Get Extension"
+#~ msgstr "احصل على الإضافة"
+
+#: pages/index.tsx:288
+#~ msgid "Grounded answers with live sources"
+#~ msgstr "إجابات موثّقة بمصادر مباشرة"
+
+#: pages/index.tsx:90
+#~ msgid "Integrates with your flow. Designed to support many AI models."
+#~ msgstr "يتكامل مع سير عملك. مصمم لدعم نماذج ذكاء اصطناعي متعددة."
+
+#: pages/index.tsx:286
+#~ msgid "Knowledge of the web, on tap"
+#~ msgstr "معرفة الويب في متناول يدك"
+
+#: pages/index.tsx:164
+#~ msgid "Live search, reasoning, and grounded answers."
+#~ msgstr "بحث مباشر واستدلال وإجابات موثّقة."
+
+#: pages/index.tsx:228
+#~ msgid "Magic Edit"
+#~ msgstr "Magic Edit"
+
+#: pages/index.tsx:289
+#~ msgid "Magic Edit: write, fix, translate"
+#~ msgstr "Magic Edit: كتابة وإصلاح وترجمة"
+
+#: pages/index.tsx:156
+#~ msgid "Magic Wand photo edits in seconds."
+#~ msgstr "تعديلات صور Magic Wand في ثوانٍ."
+
+#: pages/index.tsx:267
+#~ msgid "Model‑agnostic"
+#~ msgstr "غير معتمد على نموذج محدد"
+
+#: pages/index.tsx:196
+#~ msgid "On‑page chat"
+#~ msgstr "دردشة على الصفحة"
+
+#: pages/index.tsx:275
+#~ msgid "One‑click actions"
+#~ msgstr "إجراءات بنقرة واحدة"
+
+#: pages/index.tsx:80
+#: pages/index.tsx:139
+#: pages/index.tsx:172
+#~ msgid "Open Web App"
+#~ msgstr "افتح تطبيق الويب"
+
+#: pages/index.tsx:287
+#~ msgid "Pair code without context‑switch"
+#~ msgstr "برمجة ثنائية دون تبديل السياق"
+
+#: pages/index.tsx:162
+#~ msgid "Real‑time data & Deep Search"
+#~ msgstr "بيانات فورية وبحث عميق"
+
+#: pages/index.tsx:146
+#~ msgid "Smart model routing"
+#~ msgstr "توجيه ذكي للنماذج"
+
+#: pages/index.tsx:290
+#~ msgid "Speed: one‑click actions everywhere"
+#~ msgstr "السرعة: إجراءات بنقرة واحدة في كل مكان"
+
+#: pages/index.tsx:285
+#~ msgid "Think deeper, decide faster"
+#~ msgstr "فكّر بعمق واتخذ القرار أسرع"
+
+#: pages/index.tsx:148
+#~ msgid "Top models from any provider — automatically selected."
+#~ msgstr "أفضل النماذج من أي مزود — يتم اختيارها تلقائيًا."
+
+#: pages/index.tsx:26
+#~ msgid "Universal AI agent for the web"
+#~ msgstr "وكيل ذكاء اصطناعي عالمي للويب"
+
+#: pages/index.tsx:69
+#~ msgid "Universal AI agent. On any page."
+#~ msgstr "وكيل ذكاء اصطناعي عالمي. على أي صفحة."
+
+#: pages/index.tsx:133
+#~ msgid "WEB APP"
+#~ msgstr "تطبيق ويب"
+
+#: pages/index.tsx:271
+#~ msgid "Works with your docs"
+#~ msgstr "يعمل مع مستنداتك"
