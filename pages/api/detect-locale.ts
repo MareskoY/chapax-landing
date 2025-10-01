@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import geoip from "geoip-lite";
 
 type Result = {
 	locale: string;
@@ -64,13 +65,30 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
 		const country = cfCountry || vercelCountry;
 		if (country) {
 			const loc = countryToLocale(country);
+			console.log("[detect-locale] header country:", country, "=>", loc || "en");
 			return res.status(200).json({ locale: loc || "en", country });
 		}
 
-		const ip = getIpFromHeaders(req);
+		let ip = getIpFromHeaders(req);
+		// In local dev (::1 / 127.0.0.1), allow overriding via query ?mockCountry=RU for testing
+		const mockCountry = (req.query.mockCountry as string | undefined)?.toUpperCase();
 		let locale: Supported | null = null;
 		let detectedCountry: string | undefined = undefined;
-		if (ip) {
+		if (mockCountry) {
+			detectedCountry = mockCountry;
+			locale = countryToLocale(mockCountry);
+		}
+		if (!detectedCountry && ip) {
+			// geoip-lite first (fast, local db)
+			try {
+				const gi = geoip.lookup(ip);
+				const c0 = (gi?.country || "").toUpperCase();
+				if (c0) {
+					detectedCountry = c0;
+					locale = countryToLocale(c0);
+				}
+			} catch {}
+
 			// ip2c.org
 			try {
 				const r1 = await fetch(`https://ip2c.org/${encodeURIComponent(ip)}`, { cache: "no-store" });
@@ -102,12 +120,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
 					const c3 = (j3?.country_code || "").toUpperCase();
 					if (c3) {
 						detectedCountry = c3;
-						locale = countryToLocale(detectedCountry);
+						locale = countryToLocale(c3);
 					}
 				} catch {}
 			}
 		}
 
+		console.log("[detect-locale] ip:", ip, "country:", detectedCountry, "=>", locale || "en");
 		return res.status(200).json({ locale: locale || "en", country: detectedCountry });
 	} catch {
 		return res.status(200).json({ locale: "en" });

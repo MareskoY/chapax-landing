@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { Trans, useLingui } from "@lingui/react";
+import { activateLocale, SUPPORTED_LOCALES } from "../lib/i18n";
 import { motion } from "framer-motion";
 import { Brain, Globe, Code2, Search, Sparkles, Zap } from "lucide-react";
 import ModelChatSkeleton from "../components/webapp/ModelChatSkeleton";
@@ -19,10 +21,11 @@ const chatBubble = {
 };
 
 export default function Home() {
+  const { i18n } = useLingui();
   return (
     <div className="relative flex min-h-dvh flex-col overflow-hidden bg-background text-foreground">
       <Head>
-        <title>Chapax — Universal AI agent for the web</title>
+        <title>{`Chapax — ${i18n._('Universal AI agent for the web')}`}</title>
         <meta
           name="description"
           content="Universal AI agent with a powerful web app and an on‑page browser extension. Chat, search, pair coding, deep thinking, and Magic Edit for instant text fixes and transformations."
@@ -54,6 +57,23 @@ export default function Home() {
               <div className="h-6 w-6 sm:h-8 sm:w-8 mask-chapa" aria-hidden />
               <span className="text-xs sm:text-sm font-medium tracking-wider">CHAPAX</span>
             </div>
+            <div className="flex items-center gap-3">
+              <a href="/pricing" className="text-xs underline opacity-80 hover:opacity-100">Pricing</a>
+              <select
+              value={i18n.locale}
+                onChange={async (e) => {
+                  const next = e.target.value;
+                  await activateLocale(next);
+                }}
+                className="rounded-md border border-foreground/30 bg-background px-2 py-1 text-xs"
+              >
+                {SUPPORTED_LOCALES.map((l) => (
+                  <option key={l} value={l}>
+                    {l.toUpperCase()}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
         </div>
       </header>
@@ -65,10 +85,10 @@ export default function Home() {
             <div className="grid items-center gap-8 sm:gap-12 md:gap-16 md:grid-cols-12">
               <div className="md:col-span-7 lg:col-span-6">
                 <h1 className="text-balance text-3xl sm:text-4xl font-semibold tracking-tight md:text-6xl">
-                  Universal AI agent. On any page.
+                  <Trans id="Universal AI agent. On any page.">Universal AI agent. On any page.</Trans>
                 </h1>
                 <p className="mt-4 sm:mt-5 max-w-xl text-pretty text-sm sm:text-base text-muted-foreground md:text-lg">
-                  Chat, search, pair code, think deeply, and transform text with Magic Edit. Fast, minimal, and works across the web and your documents.
+                  <Trans id="Chat, search, pair code, think deeply, and transform text with Magic Edit. Fast, minimal, and works across the web and your documents.">Chat, search, pair code, think deeply, and transform text with Magic Edit. Fast, minimal, and works across the web and your documents.</Trans>
                 </p>
 
                 <div className="mt-6 sm:mt-8 flex flex-col gap-3 sm:flex-row">
@@ -76,17 +96,17 @@ export default function Home() {
                     href="https://app.chapax.ai"
                     className="inline-flex w-full sm:w-auto items-center justify-center rounded-md bg-foreground px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
                   >
-                    Open Web App
+                    <Trans id="Open Web App">Open Web App</Trans>
                   </a>
                   <a
                     href="https://chromewebstore.google.com/detail/chapa-your-ai-assistant-p/lhdjjndpipjcmlbkglbaphamfpjiiipo"
                     className="inline-flex w-full sm:w-auto items-center justify-center rounded-md border border-foreground/30 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-foreground/50"
                   >
-                    Get Chrome Extension
+                    <Trans id="Get Chrome Extension">Get Chrome Extension</Trans>
                   </a>
                 </div>
                 <div className="mt-4 sm:mt-6 text-xs text-muted-foreground">
-                  Integrates with your flow. Designed to support many AI models.
+                  <Trans id="Integrates with your flow. Designed to support many AI models.">Integrates with your flow. Designed to support many AI models.</Trans>
                 </div>
               </div>
 
@@ -129,38 +149,38 @@ export default function Home() {
             <div className="mb-4 sm:mb-6 flex items-center justify-between">
               <div className="flex items-center gap-2 sm:gap-3">
                 <div className="h-4 w-4 sm:h-5 sm:w-5 mask-chapa opacity-70" aria-hidden />
-                <h2 className="text-xs sm:text-sm font-semibold tracking-wider">WEB APP</h2>
+                <h2 className="text-xs sm:text-sm font-semibold tracking-wider"><Trans id="WEB APP">WEB APP</Trans></h2>
               </div>
               <a
                 href="https://app.chapax.ai"
                 className="hidden rounded-md border border-foreground/30 px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] sm:text-xs font-medium text-foreground transition-colors hover:border-foreground/50 sm:inline-flex"
               >
-                Open Web App
+                <Trans id="Open Web App">Open Web App</Trans>
               </a>
             </div>
             <div className="grid gap-4 sm:gap-6 sm:grid-cols-3">
               <div className="card-surface tilt-hover p-4 sm:p-5">
                 <motion.div initial={{ opacity: 0, y: 6 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }} className="flex items-center gap-2">
                   <Brain size={14} className="sm:w-4 sm:h-4" />
-                  <div className="text-sm font-semibold">Smart model routing</div>
+                  <div className="text-sm font-semibold"><Trans id="Smart model routing">Smart model routing</Trans></div>
                 </motion.div>
-                <div className="mt-1.5 text-sm text-muted-foreground">Top models from any provider — automatically selected.</div>
+                <div className="mt-1.5 text-sm text-muted-foreground"><Trans id="Top models from any provider — automatically selected.">Top models from any provider — automatically selected.</Trans></div>
                 <ModelChatSkeleton />
               </div>
               <div className="card-surface tilt-hover p-4 sm:p-5">
                 <motion.div initial={{ opacity: 0, y: 6 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.05 }} className="flex items-center gap-2">
                   <Sparkles size={14} className="sm:w-4 sm:h-4" />
-                  <div className="text-sm font-semibold">AI image generation</div>
+                  <div className="text-sm font-semibold"><Trans id="AI image generation">AI image generation</Trans></div>
                 </motion.div>
-                <div className="mt-1.5 text-sm text-muted-foreground">Magic Wand photo edits in seconds.</div>
+                <div className="mt-1.5 text-sm text-muted-foreground"><Trans id="Magic Wand photo edits in seconds.">Magic Wand photo edits in seconds.</Trans></div>
                 <ImageEditSkeleton />
               </div>
               <div className="card-surface tilt-hover p-4 sm:p-5">
                 <motion.div initial={{ opacity: 0, y: 6 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: 0.1 }} className="flex items-center gap-2">
                   <Search size={14} className="sm:w-4 sm:h-4" />
-                  <div className="text-sm font-semibold">Real‑time data & Deep Search</div>
+                  <div className="text-sm font-semibold"><Trans id="Real‑time data & Deep Search">Real‑time data & Deep Search</Trans></div>
                 </motion.div>
-                <div className="mt-1.5 text-sm text-muted-foreground">Live search, reasoning, and grounded answers.</div>
+                <div className="mt-1.5 text-sm text-muted-foreground"><Trans id="Live search, reasoning, and grounded answers.">Live search, reasoning, and grounded answers.</Trans></div>
                 <DeepSearchSkeleton />
               </div>
               {/* Duplicate CTA for mobile */}
@@ -168,7 +188,7 @@ export default function Home() {
                 href="https://app.chapax.ai"
                 className="sm:hidden mt-3 sm:mt-2 inline-flex w-full items-center justify-center rounded-md border border-foreground/30 px-4 py-2 text-xs font-medium text-foreground transition-colors hover:border-foreground/50"
               >
-                Open Web App
+                <Trans id="Open Web App">Open Web App</Trans>
               </a>
             </div>
           </section>
@@ -178,13 +198,13 @@ export default function Home() {
             <div className="mb-4 sm:mb-6 flex items-center justify-between">
               <div className="flex items-center gap-2 sm:gap-3">
                 <div className="h-4 w-4 sm:h-5 sm:w-5 mask-chapa opacity-70" aria-hidden />
-                <h2 className="text-xs sm:text-sm font-semibold tracking-wider">BROWSER EXTENSION</h2>
+                <h2 className="text-xs sm:text-sm font-semibold tracking-wider"><Trans id="BROWSER EXTENSION">BROWSER EXTENSION</Trans></h2>
               </div>
               <a
                 href="https://chromewebstore.google.com/detail/chapa-your-ai-assistant-p/lhdjjndpipjcmlbkglbaphamfpjiiipo"
                 className="hidden rounded-md border border-foreground/30 px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] sm:text-xs font-medium text-foreground transition-colors hover:border-foreground/50 sm:inline-flex"
               >
-                Get Extension
+              <Trans id="Get Extension">Get Extension</Trans>
               </a>
             </div>
             <div className="grid items-start gap-6 md:grid-cols-2">
@@ -192,7 +212,7 @@ export default function Home() {
               <div className="card-surface tilt-hover overflow-hidden p-0">
                 <div className="flex items-center justify-between border-b border-foreground/10 px-3 sm:px-4 py-2 text-xs text-muted-foreground">
                   <span className="text-[10px] sm:text-xs">example.com/article</span>
-                  <span className="text-[10px] sm:text-xs">On‑page chat</span>
+                  <span className="text-[10px] sm:text-xs"><Trans id="On‑page chat">On‑page chat</Trans></span>
                 </div>
                 <div className="grid grid-cols-[1fr_240px] sm:grid-cols-[1fr_280px] md:grid-cols-[1fr_320px]">
                   <div className="p-2 sm:p-3 md:p-4">
@@ -224,7 +244,7 @@ export default function Home() {
               <div id="magic" className="card-surface tilt-hover overflow-hidden p-0">
                 <div className="flex items-center justify-between border-b border-foreground/10 px-3 sm:px-4 py-2 text-xs text-muted-foreground">
                   <span className="text-[10px] sm:text-xs">editor.example.com</span>
-                  <span className="text-[10px] sm:text-xs">Magic Edit</span>
+                  <span className="text-[10px] sm:text-xs"><Trans id="Magic Edit">Magic Edit</Trans></span>
                 </div>
                 <div className="relative grid grid-cols-[1fr] p-2 sm:p-3 md:p-4">
                   <div className="h-32 sm:h-40 md:h-48 rounded bg-foreground/10" />
@@ -255,7 +275,7 @@ export default function Home() {
               href="https://chromewebstore.google.com/detail/chapa-your-ai-assistant-p/lhdjjndpipjcmlbkglbaphamfpjiiipo"
               className="sm:hidden mt-4 sm:mt-3 inline-flex w-full items-center justify-center rounded-md border border-foreground/30 px-4 py-2 text-xs font-medium text-foreground transition-colors hover:border-foreground/50"
             >
-              Get Extension
+              <Trans id="Get Extension">Get Extension</Trans>
             </a>
           </section>
 
@@ -263,16 +283,16 @@ export default function Home() {
           <section className="relative py-8 sm:py-10 md:py-16">
             <div className="grid gap-4 sm:gap-6 sm:grid-cols-3">
               <div className="card-surface tilt-hover p-4 sm:p-5">
-                <div className="flex items-center gap-2"><Globe size={14} className="sm:w-4 sm:h-4" /><div className="text-sm font-semibold">Model‑agnostic</div></div>
-                <div className="mt-2 text-sm text-muted-foreground">Built to support many AI models over time.</div>
+                <div className="flex items-center gap-2"><Globe size={14} className="sm:w-4 sm:h-4" /><div className="text-sm font-semibold"><Trans id="Model‑agnostic">Model‑agnostic</Trans></div></div>
+                <div className="mt-2 text-sm text-muted-foreground"><Trans id="Built to support many AI models over time.">Built to support many AI models over time.</Trans></div>
               </div>
               <div className="card-surface tilt-hover p-4 sm:p-5">
-                <div className="flex items-center gap-2"><Sparkles size={14} className="sm:w-4 sm:h-4" /><div className="text-sm font-semibold">Works with your docs</div></div>
-                <div className="mt-2 text-sm text-muted-foreground">Bring PDFs, notes, and knowledge — stay in flow.</div>
+                <div className="flex items-center gap-2"><Sparkles size={14} className="sm:w-4 sm:h-4" /><div className="text-sm font-semibold"><Trans id="Works with your docs">Works with your docs</Trans></div></div>
+                <div className="mt-2 text-sm text-muted-foreground"><Trans id="Bring PDFs, notes, and knowledge — stay in flow.">Bring PDFs, notes, and knowledge — stay in flow.</Trans></div>
               </div>
               <div className="card-surface tilt-hover p-4 sm:p-5">
-                <div className="flex items-center gap-2"><Zap size={14} className="sm:w-4 sm:h-4" /><div className="text-sm font-semibold">One‑click actions</div></div>
-                <div className="mt-2 text-sm text-muted-foreground">Apply Magic Edit, copy, insert, or open in app instantly.</div>
+                <div className="flex items-center gap-2"><Zap size={14} className="sm:w-4 sm:h-4" /><div className="text-sm font-semibold"><Trans id="One‑click actions">One‑click actions</Trans></div></div>
+                <div className="mt-2 text-sm text-muted-foreground"><Trans id="Apply Magic Edit, copy, insert, or open in app instantly.">Apply Magic Edit, copy, insert, or open in app instantly.</Trans></div>
               </div>
             </div>
           </section>
@@ -281,12 +301,12 @@ export default function Home() {
           <section className="relative py-8 sm:py-10 md:py-16">
             <div className="grid grid-cols-2 gap-2 sm:gap-3 sm:grid-cols-6">
                 {[
-                { icon: Brain, text: <>Think deeper, decide faster</> },
-                { icon: Globe, text: <>Knowledge of the web, on tap</> },
-                { icon: Code2, text: <>Pair code without context‑switch</> },
-                { icon: Search, text: <>Grounded answers with live sources</> },
-                { icon: Sparkles, text: <>Magic Edit: write, fix, translate</> },
-                { icon: Zap, text: <>Speed: one‑click actions everywhere</> },
+                { icon: Brain, text: <Trans id="Think deeper, decide faster">Think deeper, decide faster</Trans> },
+                { icon: Globe, text: <Trans id="Knowledge of the web, on tap">Knowledge of the web, on tap</Trans> },
+                { icon: Code2, text: <Trans id="Pair code without context‑switch">Pair code without context‑switch</Trans> },
+                { icon: Search, text: <Trans id="Grounded answers with live sources">Grounded answers with live sources</Trans> },
+                { icon: Sparkles, text: <Trans id="Magic Edit: write, fix, translate">Magic Edit: write, fix, translate</Trans> },
+                { icon: Zap, text: <Trans id="Speed: one‑click actions everywhere">Speed: one‑click actions everywhere</Trans> },
               ].map((item, idx) => (
                 <div key={idx} className="group relative aspect-square overflow-hidden rounded-xl border border-foreground/10 bg-background/70">
                   <div className="absolute inset-0 grid place-items-center">
@@ -305,7 +325,7 @@ export default function Home() {
       <footer className="relative z-10 border-t border-foreground/10 py-4 sm:py-6 text-xs text-muted-foreground">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 md:px-8">
           <span>© {new Date().getFullYear()} Chapax</span>
-          <span>Fast. Minimal. Helpful.</span>
+          <span><Trans id="Fast. Minimal. Helpful.">Fast. Minimal. Helpful.</Trans></span>
         </div>
       </footer>
     </div>
