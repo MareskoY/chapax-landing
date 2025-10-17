@@ -71,7 +71,12 @@ export async function sendTelegramPhoto(params: {
     const form = new FormData();
     form.set("chat_id", chatId);
     if (params.caption) form.set("caption", params.caption);
-    const blob = new Blob([dataBuffer], { type: mime });
+    // Ensure we pass a proper ArrayBuffer to Blob for TS compatibility across runtimes
+    const arrayBuffer: ArrayBuffer = dataBuffer.buffer.slice(
+      dataBuffer.byteOffset,
+      dataBuffer.byteOffset + dataBuffer.byteLength
+    ) as ArrayBuffer;
+    const blob = new Blob([arrayBuffer], { type: mime });
     const name = params.fileName || `photo.${mime.split("/")[1] || "jpg"}`;
     form.set("photo", blob, name);
 
