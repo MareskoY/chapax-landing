@@ -68,7 +68,7 @@ export default function PricingPage({ isRussia }: { isRussia: boolean }) {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
           <div className="flex items-center justify-between py-4 sm:py-6">
             <a href="/" className="flex items-center gap-2 sm:gap-3">
-              <div className="h-6 w-6 sm:h-8 sm:w-8 mask-chapa" aria-hidden />
+              <img src="/chapa.svg" alt="" className="h-6 w-6 sm:h-8 sm:w-8" aria-hidden />
               <span className="text-xs sm:text-sm font-medium tracking-wider">CHAPAX</span>
             </a>
             <div className="flex items-center gap-3">

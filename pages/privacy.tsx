@@ -1,6 +1,9 @@
 import Head from "next/head";
+import { Trans, useLingui } from "@lingui/react";
+import { activateLocale, SUPPORTED_LOCALES } from "../lib/i18n";
 
 export default function Privacy() {
+  const { i18n } = useLingui();
   return (
     <div className="min-h-dvh bg-background text-foreground">
       <Head>
@@ -8,6 +11,33 @@ export default function Privacy() {
         <meta name="robots" content="noindex, nofollow" />
         <meta name="description" content="Privacy Policy for ChapaX browser extension and website" />
       </Head>
+
+      <header className="relative z-10">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
+          <div className="flex items-center justify-between py-4 sm:py-6">
+            <a href="/" className="flex items-center gap-2 sm:gap-3">
+              <img src="/chapa.svg" alt="" className="h-6 w-6 sm:h-8 sm:w-8" aria-hidden />
+              <span className="text-xs sm:text-sm font-medium tracking-wider">CHAPAX</span>
+            </a>
+            <div className="flex items-center gap-3">
+              <select
+                value={i18n.locale}
+                onChange={async (e) => {
+                  const next = e.target.value;
+                  await activateLocale(next);
+                }}
+                className="rounded-md border border-foreground/30 bg-background px-2 py-1 text-xs"
+              >
+                {SUPPORTED_LOCALES.map((l) => (
+                  <option key={l} value={l}>
+                    {l.toUpperCase()}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
+        </div>
+      </header>
 
       <main className="mx-auto max-w-3xl px-6 py-12 sm:py-16">
         <h1 className="text-2xl font-semibold">Privacy Policy</h1>
