@@ -37,7 +37,7 @@ export default function Home() {
           content="Web app + browser extension with Magic Edit. Chat, search, pair coding, deep thinking, and instant fixes across any page and document."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/chapa.svg" />
+        <meta property="og:image" content="/favicon" />
       </Head>
 
       <div className="pointer-events-none absolute inset-0 bg-grid animate-grid-pan opacity-30" />
@@ -54,11 +54,12 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
           <div className="flex items-center justify-between py-4 sm:py-6">
             <div className="flex items-center gap-2 sm:gap-3">
-              <div className="h-6 w-6 sm:h-8 sm:w-8 mask-chapa" aria-hidden />
+              <img src="/chapa.svg" alt="" className="h-6 w-6 sm:h-8 sm:w-8" aria-hidden />
               <span className="text-xs sm:text-sm font-medium tracking-wider">CHAPAX</span>
             </div>
             <div className="flex items-center gap-3">
               <a href="/pricing" className="text-xs underline opacity-80 hover:opacity-100">Pricing</a>
+              <a href="/support" className="text-xs underline opacity-80 hover:opacity-100">Support</a>
               <select
               value={i18n.locale}
                 onChange={async (e) => {
@@ -148,7 +149,7 @@ export default function Home() {
           <section id="webapp" className="relative py-8 sm:py-10 md:py-16">
             <div className="mb-4 sm:mb-6 flex items-center justify-between">
               <div className="flex items-center gap-2 sm:gap-3">
-                <div className="h-4 w-4 sm:h-5 sm:w-5 mask-chapa opacity-70" aria-hidden />
+                <img src="/chapa.svg" alt="" className="h-4 w-4 sm:h-5 sm:w-5 opacity-70" aria-hidden />
                 <h2 className="text-xs sm:text-sm font-semibold tracking-wider"><Trans id="WEB APP">WEB APP</Trans></h2>
               </div>
               <a
@@ -197,7 +198,7 @@ export default function Home() {
           <section id="extension" className="relative py-8 sm:py-10 md:py-16">
             <div className="mb-4 sm:mb-6 flex items-center justify-between">
               <div className="flex items-center gap-2 sm:gap-3">
-                <div className="h-4 w-4 sm:h-5 sm:w-5 mask-chapa opacity-70" aria-hidden />
+                <img src="/chapa.svg" alt="" className="h-4 w-4 sm:h-5 sm:w-5 opacity-70" aria-hidden />
                 <h2 className="text-xs sm:text-sm font-semibold tracking-wider"><Trans id="BROWSER EXTENSION">BROWSER EXTENSION</Trans></h2>
               </div>
               <a

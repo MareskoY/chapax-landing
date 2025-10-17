@@ -162,8 +162,8 @@
 
 @layer utilities {
   .mask-chapa {
-    -webkit-mask-image: url('/chapa.svg');
-    mask-image: url('/chapa.svg');
+    -webkit-mask-image: url('/chapa-dark1.svg');
+    mask-image: url('/chapa-dark1.svg');
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-size: contain;
