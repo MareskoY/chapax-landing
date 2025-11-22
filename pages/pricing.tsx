@@ -29,7 +29,7 @@ export default function PricingPage({ isRussia }: { isRussia: boolean }) {
     chokensPerMonth: 10000,
   };
 
-  const currencyLabel = isRussia ? "₽ 560" : "€ 8.5";
+  const currencyLabel = isRussia ? "₽ 1200" : "€ 12.5";
 
   const plans: PlanInfo[] = useMemo(() => {
     return [
@@ -51,6 +51,7 @@ export default function PricingPage({ isRussia }: { isRussia: boolean }) {
         features: [
           <Trans id="Chat with advanced models">Chat with advanced models</Trans>,
           <Trans id="Priority access">Priority access</Trans>,
+          <Trans id="Video Generation">Video Generation</Trans>,
         ],
         limits: plusLimits,
       },
@@ -136,7 +137,7 @@ export default function PricingPage({ isRussia }: { isRussia: boolean }) {
                     </>
                   ) : (
                     <>
-                      <div className="text-2xl font-semibold">{isRussia ? "₽560" : `€${p.priceLabel}`}</div>
+                      <div className="text-2xl font-semibold">{isRussia ? "₽1200" : `€${p.priceLabel}`}</div>
                       <div className="text-xs text-muted-foreground"><Trans id="/mo">/mo</Trans></div>
                     </>
                   )}

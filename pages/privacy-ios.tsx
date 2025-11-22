@@ -91,7 +91,7 @@ export default function PrivacyIOS() {
 
           <h2 className="text-base font-medium mt-6">7. Contact</h2>
           <div className="space-y-1">
-            <p>📩 Email: <a href="mailto:chapagpt@gmail.com" className="text-primary hover:underline">chapagpt@gmail.com</a></p>
+            <p>📩 Email: <a href="mailto:support@chapax.ai" className="text-primary hover:underline">support@chapax.ai</a></p>
             <p>👤 Data Controller: Nikita Bokarev (Individual Entrepreneur)</p>
           </div>
 

@@ -114,7 +114,7 @@ export default function Privacy() {
           <h2 className="text-base font-medium">4. Contact</h2>
           <p>For any questions or requests related to this Privacy Policy, please contact us:</p>
           <div className="mt-2 space-y-1">
-            <p>📩 Email: <a href="mailto:chapagpt@gmail.com" className="text-primary hover:underline">chapagpt@gmail.com</a></p>
+            <p>📩 Email: <a href="mailto:support@chapax.ai" className="text-primary hover:underline">support@chapax.ai</a></p>
             <p>👤 Data Controller: Nikita Bokarev (Individual Entrepreneur)</p>
           </div>
         </div>

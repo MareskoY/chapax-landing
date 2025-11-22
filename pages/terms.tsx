@@ -126,7 +126,7 @@ export default function Terms() {
 
           <h2 className="text-base font-medium">Contact</h2>
           <p>
-            <a href="mailto:chatgpt@gmail.com" className="text-primary hover:underline">chatgpt@gmail.com</a>
+            <a href="mailto:support@chapax.ai" className="text-primary hover:underline">support@chapax.ai</a>
           </p>
         </div>
       </main>
