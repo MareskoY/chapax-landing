@@ -20,7 +20,7 @@ export default function Rekvizity() {
               <dd className="sm:col-span-2">+7 980 435-14-25</dd>
 
               <dt className="text-muted-foreground">Email</dt>
-              <dd className="sm:col-span-2">nikita.bokz@outlook.com</dd>
+              <dd className="sm:col-span-2">support@chapax.ai</dd>
             </dl>
           </section>
 
