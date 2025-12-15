@@ -99,8 +99,26 @@
     @apply border-border;
   }
 
+  html,
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+
+  /* Smooth scroll with offset for fixed header */
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+  
+  /* Anchor targets with padding for fixed header */
+  [id] {
+    scroll-margin-top: 80px;
   }
 }
 
