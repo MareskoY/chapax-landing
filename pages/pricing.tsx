@@ -1,9 +1,11 @@
 import Head from "next/head";
 import type { GetServerSideProps } from "next";
 import { useMemo, useState, type ReactNode } from "react";
-import { Info, Check } from "lucide-react";
+import { Info, Check, Sparkles } from "lucide-react";
 import { Trans, useLingui } from "@lingui/react";
 import { activateLocale, SUPPORTED_LOCALES } from "../lib/i18n";
+import Header from "../components/landing/Header";
+import { motion } from "framer-motion";
 
 
 type Limits = {
@@ -26,7 +28,7 @@ export default function PricingPage({ isRussia }: { isRussia: boolean }) {
   };
 
   const plusLimits: Limits = {
-    chokensPerMonth: 10000,
+    chokensPerMonth: 12000,
   };
 
   const currencyLabel = isRussia ? "₽ 1200" : "€ 12.5";
@@ -59,164 +61,222 @@ export default function PricingPage({ isRussia }: { isRussia: boolean }) {
   }, [currencyLabel]);
 
   return (
-    <div className="relative flex min-h-dvh flex-col bg-background text-foreground">
+    <div className="relative min-h-dvh bg-background text-foreground overflow-x-hidden">
       <Head>
         <title>{`Chapax — ${i18n._("Pricing")}`}</title>
         <meta name="robots" content="noindex, nofollow" />
       </Head>
 
-      <header className="relative z-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
-          <div className="flex items-center justify-between py-4 sm:py-6">
-            <a href="/" className="flex items-center gap-2 sm:gap-3">
-              <img src="/chapa.svg" alt="" className="h-6 w-6 sm:h-8 sm:w-8" aria-hidden />
-              <span className="text-xs sm:text-sm font-medium tracking-wider">CHAPAX</span>
-            </a>
-            <div className="flex items-center gap-3">
-              <select
-                value={i18n.locale}
-                onChange={async (e) => {
-                  const next = e.target.value;
-                  await activateLocale(next);
-                }}
-                className="rounded-md border border-foreground/30 bg-background px-2 py-1 text-xs"
-              >
-                {SUPPORTED_LOCALES.map((l) => (
-                  <option key={l} value={l}>
-                    {l.toUpperCase()}
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
-        </div>
-      </header>
+      {/* Background Effects Container */}
+      <div className="fixed inset-0 -z-10 overflow-hidden">
+        <div className="pointer-events-none absolute inset-0 bg-grid animate-grid-pan opacity-30" />
+        <div className="pointer-events-none absolute inset-0 bg-dots opacity-10" />
+        <div className="pointer-events-none absolute inset-0 bg-scanlines animate-scan opacity-10" />
+        
+        {/* Beams/Orbs with subtle pink tint */}
+        <div className="beam absolute left-[-20%] top-[-10%] h-[60vh] w-[60vw] animate-beam opacity-40" style={{ background: 'radial-gradient(circle, rgba(255, 58, 212, 0.15) 0%, transparent 70%)' }} />
+        <div className="beam absolute right-[-10%] bottom-[-20%] h-[50vh] w-[50vw] animate-beam opacity-30" style={{ background: 'radial-gradient(circle, rgba(255, 111, 224, 0.1) 0%, transparent 70%)' }} />
+      </div>
 
-      <main className="mx-auto max-w-5xl px-6 py-12 sm:py-16">
-        <div className="mb-8 flex items-center justify-between">
-          <h1 className="text-2xl font-semibold"><Trans id="Pricing">Pricing</Trans></h1>
-          {isRussia && (
-            <div className="flex items-center gap-2">
-              <a
-                href="/rekvizity"
-                className="rounded-md border border-foreground/30 px-4 py-2 text-xs font-medium text-foreground transition-colors hover:border-foreground/50"
-              >
-                Реквизиты
-              </a>
-              <a
-                href="/oferta"
-                className="rounded-md border border-foreground/30 px-4 py-2 text-xs font-medium text-foreground transition-colors hover:border-foreground/50"
-              >
-                Договор оферты
-              </a>
-            </div>
-          )}
-        </div>
+      <Header />
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          {plans.map((p) => (
-            <div
+      <main className="relative pt-[72px] sm:pt-[80px] pb-16 sm:pb-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+          {/* Title Section */}
+          <motion.div 
+            className="text-center mb-12 sm:mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4">
+              <Trans id="Pricing">Pricing</Trans>
+            </h1>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <Trans id="Choose the perfect plan for your AI needs">Choose the perfect plan for your AI needs</Trans>
+            </p>
+            
+            {isRussia && (
+              <div className="flex items-center justify-center gap-3 mt-6">
+                <a
+                  href="/rekvizity"
+                  className="rounded-lg border border-foreground/20 px-4 py-2 text-sm font-medium hover:border-foreground/40 transition-all"
+                >
+                  Реквизиты
+                </a>
+                <a
+                  href="/oferta"
+                  className="rounded-lg border border-foreground/20 px-4 py-2 text-sm font-medium hover:border-foreground/40 transition-all"
+                >
+                  Договор оферты
+                </a>
+              </div>
+            )}
+          </motion.div>
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mb-16">
+          {plans.map((p, idx) => (
+            <motion.div
               key={p.id}
-              className={`rounded-2xl border bg-card p-4 flex flex-col gap-3 ${p.id === "PLUS" ? "ring-1 ring-primary/40" : ""}`}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: idx * 0.1 }}
+              className={`relative rounded-3xl border ${
+                p.id === "PLUS" 
+                  ? "border-[#ff3ad4]/30 bg-gradient-to-br from-[#ff3ad4]/5 via-card to-card shadow-xl shadow-[#ff3ad4]/10" 
+                  : "border-foreground/10 bg-card"
+              } p-6 sm:p-8 flex flex-col gap-6 hover:scale-[1.02] transition-all duration-300`}
             >
+              {/* Popular Badge */}
+              {p.id === "PLUS" && (
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                  <div className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold shadow-lg"
+                    style={{ backgroundColor: '#ff3ad4', color: '#0B0B0B' }}
+                  >
+                    <Sparkles className="w-3.5 h-3.5" />
+                    <Trans id="Popular">Popular</Trans>
+                  </div>
+                </div>
+              )}
+              
               <div className="flex items-start justify-between">
-                <div>
-                  <div className="text-lg font-medium">{p.title}</div>
-                  <div className="text-sm text-muted-foreground flex items-center gap-2">
+                <div className="flex-1">
+                  <div className="text-2xl font-bold mb-2">{p.title}</div>
+                  <div className="text-sm text-muted-foreground">
                     {p.id === "FREE" ? <Trans id="Best to try the app">Best to try the app</Trans> : <Trans id="More headroom and priority">More headroom and priority</Trans>}
-                    {p.id === "PLUS" && (
-                      <span className="text-[10px] px-2 py-0.5 rounded-full bg-primary/10 text-primary"><Trans id="Popular">Popular</Trans></span>
-                    )}
                   </div>
                 </div>
                 <div className="text-right">
                   {p.id === "FREE" ? (
                     <>
-                      <div className="text-2xl font-semibold"><Trans id="Free">Free</Trans></div>
-                      <div className="text-xs text-muted-foreground"><Trans id="/mo">/mo</Trans></div>
+                      <div className="text-4xl font-bold"><Trans id="Free">Free</Trans></div>
+                      <div className="text-sm text-muted-foreground mt-1"><Trans id="/mo">/mo</Trans></div>
                     </>
                   ) : (
                     <>
-                      <div className="text-2xl font-semibold">{isRussia ? "₽1200" : `€${p.priceLabel}`}</div>
-                      <div className="text-xs text-muted-foreground"><Trans id="/mo">/mo</Trans></div>
+                      <div className="text-4xl font-bold" style={{ color: '#ff3ad4' }}>
+                        {isRussia ? "₽1200" : `€${p.priceLabel}`}
+                      </div>
+                      <div className="text-sm text-muted-foreground mt-1"><Trans id="/mo">/mo</Trans></div>
                     </>
                   )}
                 </div>
               </div>
-              <TokensSummary chokens={p.limits.chokensPerMonth} />
-              <div className="text-sm">
-                <div className="text-xs font-medium text-muted-foreground mb-1"><Trans id="What you get">What you get</Trans></div>
-                <div className="rounded-lg border bg-muted/30 p-3">
-                  <ul className="space-y-2">
+
+              <TokensSummary chokens={p.limits.chokensPerMonth} isPlus={p.id === "PLUS"} />
+
+              <div className="text-sm flex-1">
+                <div className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wider">
+                  <Trans id="What you get">What you get</Trans>
+                </div>
+                <div className={`rounded-2xl border p-5 ${
+                  p.id === "PLUS" ? "border-[#ff3ad4]/20 bg-[#ff3ad4]/5" : "border-foreground/10 bg-muted/30"
+                }`}>
+                  <ul className="space-y-3">
                     {p.features.map((f, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <Check className="size-4 mt-[2px] text-primary" />
-                        <span>{f}</span>
+                      <li key={idx} className="flex items-start gap-3">
+                        <div className={`mt-0.5 rounded-full p-0.5 ${
+                          p.id === "PLUS" ? "bg-[#ff3ad4]" : "bg-foreground/20"
+                        }`}>
+                          <Check className="w-3.5 h-3.5 text-background" />
+                        </div>
+                        <span className="font-medium">{f}</span>
                       </li>
                     ))}
-                    <li className="flex items-center justify-between text-muted-foreground">
-                      <span><Trans id="≈ chat replies">≈ chat replies</Trans></span>
-                      <span className="tabular-nums text-foreground">{p.id === "FREE" ? 450 : 8500}</span>
+                    <li className="flex items-center justify-between pt-2 border-t border-foreground/10">
+                      <span className="text-muted-foreground"><Trans id="≈ chat replies">≈ chat replies</Trans></span>
+                      <span className="tabular-nums font-semibold">{p.id === "FREE" ? 450 : 15000}</span>
                     </li>
-                    <li className="flex items-center justify-between text-muted-foreground">
-                      <span><Trans id="≈ code edits">≈ code edits</Trans></span>
-                      <span className="tabular-nums text-foreground">{p.id === "FREE" ? 200 : 4250}</span>
+                    <li className="flex items-center justify-between">
+                      <span className="text-muted-foreground"><Trans id="≈ code edits">≈ code edits</Trans></span>
+                      <span className="tabular-nums font-semibold">{p.id === "FREE" ? 200 : 6250}</span>
                     </li>
-                    <li className="flex items-center justify-between text-muted-foreground">
-                      <span><Trans id="≈ image gens">≈ image gens</Trans></span>
-                      <span className="tabular-nums text-foreground">{p.id === "FREE" ? 5 : 250}</span>
+                    <li className="flex items-center justify-between">
+                      <span className="text-muted-foreground"><Trans id="≈ image gens">≈ image gens</Trans></span>
+                      <span className="tabular-nums font-semibold">{p.id === "FREE" ? 5 : 450}</span>
+                    </li>
+                    <li className="flex items-center justify-between">
+                      <span className="text-muted-foreground"><Trans id="≈ image gens">≈ edit photos</Trans></span>
+                      <span className="tabular-nums font-semibold">{p.id === "FREE" ? 5 : 550}</span>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className="mt-auto pt-2">
+
+              <div className="mt-auto">
                 {p.id === "FREE" ? (
-                  <div className="text-xs text-muted-foreground"><Trans id="This plan is free for everyone.">This plan is free for everyone.</Trans></div>
+                  <div className="text-sm text-center text-muted-foreground py-3">
+                    <Trans id="This plan is free for everyone.">This plan is free for everyone.</Trans>
+                  </div>
                 ) : (
-                  <a
+                  <motion.a
                     href="https://app.chapax.ai/plans"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center rounded-md bg-foreground px-4 py-2 text-sm text-background hover:bg-foreground/90"
+                    className="w-full inline-flex items-center justify-center rounded-xl px-6 py-3.5 text-base font-semibold shadow-lg transition-all hover:scale-105"
+                    style={{ backgroundColor: '#ff3ad4', color: '#0B0B0B' }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
                   >
                     <Trans id="Get in App">Get in App</Trans>
-                  </a>
+                  </motion.a>
                 )}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* Token Packs Section */}
-        <div className="mt-10">
-          <div className="text-lg font-semibold mb-3"><Trans id="One‑time token packs">One‑time token packs</Trans></div>
+        <motion.div 
+          className="mt-20"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          <div className="text-center mb-8">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-3">
+              <Trans id="One‑time token packs">One‑time token packs</Trans>
+            </h2>
+            <p className="text-muted-foreground">
+              <Trans id="Need more tokens? Get them as you go">Need more tokens? Get them as you go</Trans>
+            </p>
+          </div>
           <TokenPacks isRussia={isRussia} />
+        </motion.div>
         </div>
       </main>
+
+      <footer className="relative border-t border-foreground/10 py-6 text-xs text-muted-foreground">
+        <div className="mx-auto flex max-w-7xl items-center justify-center px-4 sm:px-6">
+          <span>© {new Date().getFullYear()} Chapax</span>
+        </div>
+      </footer>
     </div>
   );
 }
 
-function TokensSummary({ chokens }: { chokens: number }) {
+function TokensSummary({ chokens, isPlus }: { chokens: number; isPlus?: boolean }) {
   const [open, setOpen] = useState(false);
   const { i18n } = useLingui();
   return (
-    <div className="flex items-center justify-between rounded-xl border bg-muted/30 px-3 py-3">
-      <div className="text-xl md:text-2xl font-semibold tabular-nums">
-        {chokens} <span className="text-base font-normal text-muted-foreground"><Trans id="tokens/mo">tokens/mo</Trans></span>
+    <div className={`relative flex items-center justify-between rounded-2xl border px-4 py-4 ${
+      isPlus ? "border-[#ff3ad4]/30 bg-[#ff3ad4]/10" : "border-foreground/10 bg-muted/30"
+    }`}>
+      <div className="text-2xl md:text-3xl font-bold tabular-nums">
+        {chokens.toLocaleString()} <span className="text-base font-normal text-muted-foreground"><Trans id="tokens/mo">tokens/mo</Trans></span>
       </div>
       <button
         type="button"
-        className="text-muted-foreground hover:text-foreground"
+        className="text-muted-foreground hover:text-foreground transition-colors"
         onClick={() => setOpen((v) => !v)}
         aria-label={i18n._("What are tokens?")}
       >
-        <Info className="size-5" />
+        <Info className="w-5 h-5" />
       </button>
       {open && (
-        <div className="absolute mt-24 right-6 z-10 w-64 rounded-md border bg-background p-3 text-xs shadow-sm">
-          <div className="font-medium mb-1"><Trans id="What are tokens?">What are tokens?</Trans></div>
-          <div>
+        <div className="absolute top-full mt-2 right-0 z-10 w-72 rounded-xl border border-foreground/10 bg-background/95 backdrop-blur-lg p-4 text-sm shadow-xl">
+          <div className="font-semibold mb-2"><Trans id="What are tokens?">What are tokens?</Trans></div>
+          <div className="text-muted-foreground">
             <Trans id="Tokens explainer">A token is a unified credit used to price different AI features consistently. One token roughly equals a small chat response. Heavier tasks (coding, images) consume more tokens.</Trans>
           </div>
         </div>
@@ -234,27 +294,44 @@ function TokenPacks({ isRussia }: { isRussia: boolean }) {
     { id: "pack-40k", amount: 40000, priceEUR: 38, priceRUB: 3750 },
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
-      {packs.map((p) => (
-        <div key={p.id} className="rounded-xl border bg-card p-4 flex flex-col gap-3">
-          <div className="flex items-baseline justify-between">
-            <div>
-              <div className="text-2xl md:text-3xl font-bold tabular-nums">{p.amount.toLocaleString()}</div>
-              <div className="text-xs text-muted-foreground"><Trans id="tokens">tokens</Trans></div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      {packs.map((p, idx) => (
+        <motion.div 
+          key={p.id} 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 + idx * 0.1 }}
+          className="group relative rounded-2xl border border-foreground/10 bg-card p-6 flex flex-col gap-4 hover:border-[#ff3ad4]/30 hover:shadow-xl hover:shadow-[#ff3ad4]/5 transition-all duration-300 hover:scale-105"
+        >
+          {/* Subtle gradient overlay on hover */}
+          <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#ff3ad4]/0 to-[#ff3ad4]/0 group-hover:from-[#ff3ad4]/5 group-hover:to-transparent transition-all duration-300 pointer-events-none" />
+          
+          <div className="relative z-10">
+            <div className="text-3xl sm:text-4xl font-bold tabular-nums mb-1">
+              {p.amount.toLocaleString()}
             </div>
-            <div className="text-lg font-semibold">
+            <div className="text-sm text-muted-foreground font-medium">
+              <Trans id="tokens">tokens</Trans>
+            </div>
+          </div>
+          
+          <div className="relative z-10 mt-auto pt-4 border-t border-foreground/10">
+            <div className="text-2xl font-bold tabular-nums" style={{ color: '#ff3ad4' }}>
               {isRussia ? `₽${p.priceRUB?.toLocaleString()}` : `€${p.priceEUR}`}
             </div>
           </div>
-          {/* <a
+          
+          <motion.a
             href="https://app.chapax.ai/plans"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-auto rounded-md border px-3 py-1.5 text-sm hover:bg-muted text-center"
+            className="relative z-10 mt-2 rounded-xl border border-foreground/20 px-4 py-2.5 text-sm font-medium hover:border-[#ff3ad4]/50 hover:bg-[#ff3ad4]/10 text-center transition-all"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
           >
             <Trans id="Get in App">Get in App</Trans>
-          </a> */}
-        </div>
+          </motion.a>
+        </motion.div>
       ))}
     </div>
   );
