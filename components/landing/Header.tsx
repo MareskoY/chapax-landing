@@ -92,7 +92,7 @@ export default function Header() {
             </button>
 
             {/* Language Selector */}
-            <div className="relative hidden sm:block">
+            <div className="relative">
               <select
                 value={i18n.locale}
                 onChange={async (e) => {
@@ -124,7 +124,7 @@ export default function Header() {
             </a>
             <a
               href="#platforms"
-              className="inline-flex items-center justify-center px-4 sm:px-5 py-2 text-sm font-medium rounded-lg bg-foreground text-background hover:opacity-90 transition-opacity"
+              className="hidden sm:inline-flex items-center justify-center px-4 sm:px-5 py-2 text-sm font-medium rounded-lg bg-foreground text-background hover:opacity-90 transition-opacity"
             >
               <Trans id="Download App">Download App</Trans>
             </a>
