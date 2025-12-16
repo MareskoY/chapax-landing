@@ -1,75 +1,212 @@
 import { Trans } from "@lingui/react";
 import { motion } from "framer-motion";
-import { MessageSquare, Image, Video, Puzzle, Sparkles, Globe, Mic, Wand2, Crop, Clapperboard, Heart, Film, User, Edit3, Languages, ArrowRight } from "lucide-react";
-
-const features = [
-  {
-    id: 'chat',
-    title: 'Intelligent Conversations',
-    subtitle: 'AI Chat That Understands You',
-    description: 'Experience next-generation AI chat powered by the world\'s most advanced language models. From deep analysis to real-time web search, our AI adapts to your needs.',
-    icon: MessageSquare,
-    color: '#F7E8C8',
-    textColor: '#1A40FF',
-    gradient: 'from-amber-50 to-orange-50',
-    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop',
-    items: [
-      { icon: Sparkles, title: 'Deep Thinking', text: 'Advanced reasoning and multi-step analysis for complex problems' },
-      { icon: Globe, title: 'Real-Time Search', text: 'Access the latest information from across the web instantly' },
-      { icon: Mic, title: 'Voice Mode', text: 'Natural voice conversations that feel completely human' },
-    ],
-  },
-  {
-    id: 'images',
-    title: 'Visual Creation Studio',
-    subtitle: 'AI-Powered Image Magic',
-    description: 'Transform your ideas into stunning visuals. Generate, edit, and enhance images with professional-grade AI tools that understand your creative vision.',
-    icon: Image,
-    color: '#FF6F61',
-    textColor: '#1434FF',
-    gradient: 'from-rose-50 to-pink-50',
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=600&fit=crop',
-    items: [
-      { icon: Wand2, title: 'Image Generation', text: 'Create stunning artwork from text descriptions in seconds' },
-      { icon: Edit3, title: 'Smart Editing', text: 'Professional photo editing powered by AI intelligence' },
-      { icon: Crop, title: 'Inpainting', text: 'Edit specific regions with precision and natural results' },
-    ],
-  },
-  {
-    id: 'video',
-    title: 'Motion & Animation',
-    subtitle: 'Bring Your Ideas to Life',
-    description: 'Create captivating videos and animations effortlessly. From text-to-video generation to photo animation, unlock cinematic possibilities.',
-    icon: Video,
-    color: '#0F2D1F',
-    textColor: '#FF6FE0',
-    gradient: 'from-emerald-950 to-teal-900',
-    image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop',
-    items: [
-      { icon: Clapperboard, title: 'Text-to-Video', text: 'Generate professional videos from your descriptions' },
-      { icon: Heart, title: 'Photo Animation', text: 'Transform static photos into living, breathing moments' },
-      { icon: Film, title: 'Video Editing', text: 'Edit and enhance videos with AI-powered tools' },
-    ],
-  },
-  {
-    id: 'extension',
-    title: 'Browser Superpowers',
-    subtitle: 'Your AI Assistant Everywhere',
-    description: 'Seamlessly integrate AI into your browsing experience. Get instant help, translations, and text improvements on any webpage.',
-    icon: Puzzle,
-    color: '#F7E8C8',
-    textColor: '#1A40FF',
-    gradient: 'from-amber-50 to-yellow-50',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
-    items: [
-      { icon: User, title: 'On-Page Assistant', text: 'Smart AI companion available on every website you visit' },
-      { icon: Edit3, title: 'Magic Edit', text: 'Instantly fix, improve, or rewrite any text with one click' },
-      { icon: Languages, title: 'Live Translation', text: 'Real-time translation and enhancement as you type' },
-    ],
-  },
-];
+import {
+  MessageSquare,
+  Image,
+  Video,
+  Puzzle,
+  Sparkles,
+  Globe,
+  Mic,
+  Wand2,
+  Crop,
+  Clapperboard,
+  Heart,
+  Film,
+  User,
+  Edit3,
+  Languages,
+  ArrowRight,
+} from "lucide-react";
 
 export default function FeaturesSection() {
+  const features = [
+    {
+      id: 'chat',
+      alt: "Intelligent Conversations",
+      title: (
+        <Trans id="Intelligent Conversations">Intelligent Conversations</Trans>
+      ),
+      subtitle: (
+        <Trans id="AI Chat That Understands You">AI Chat That Understands You</Trans>
+      ),
+      description: (
+        <Trans id="Experience next-generation AI chat powered by the world's most advanced language models. From deep analysis to real-time web search, our AI adapts to your needs.">
+          Experience next-generation AI chat powered by the world's most advanced language models. From deep analysis to real-time web search, our AI adapts to your needs.
+        </Trans>
+      ),
+      icon: MessageSquare,
+      color: '#F7E8C8',
+      textColor: '#1A40FF',
+      gradient: 'from-amber-50 to-orange-50',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop',
+      items: [
+        {
+          icon: Sparkles,
+          title: <Trans id="Deep Thinking">Deep Thinking</Trans>,
+          text: (
+            <Trans id="Advanced reasoning and multi-step analysis for complex problems">
+              Advanced reasoning and multi-step analysis for complex problems
+            </Trans>
+          ),
+        },
+        {
+          icon: Globe,
+          title: <Trans id="Real-Time Search">Real-Time Search</Trans>,
+          text: (
+            <Trans id="Access the latest information from across the web instantly">
+              Access the latest information from across the web instantly
+            </Trans>
+          ),
+        },
+        {
+          icon: Mic,
+          title: <Trans id="Voice Mode">Voice Mode</Trans>,
+          text: (
+            <Trans id="Natural voice conversations that feel completely human">
+              Natural voice conversations that feel completely human
+            </Trans>
+          ),
+        },
+      ],
+    },
+    {
+      id: 'images',
+      alt: "Visual Creation Studio",
+      title: <Trans id="Visual Creation Studio">Visual Creation Studio</Trans>,
+      subtitle: <Trans id="AI-Powered Image Magic">AI-Powered Image Magic</Trans>,
+      description: (
+        <Trans id="Transform your ideas into stunning visuals. Generate, edit, and enhance images with professional-grade AI tools that understand your creative vision.">
+          Transform your ideas into stunning visuals. Generate, edit, and enhance images with professional-grade AI tools that understand your creative vision.
+        </Trans>
+      ),
+      icon: Image,
+      color: '#FF6F61',
+      textColor: '#1434FF',
+      gradient: 'from-rose-50 to-pink-50',
+      image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=600&fit=crop',
+      items: [
+        {
+          icon: Wand2,
+          title: <Trans id="Image Generation">Image Generation</Trans>,
+          text: (
+            <Trans id="Create stunning artwork from text descriptions in seconds">
+              Create stunning artwork from text descriptions in seconds
+            </Trans>
+          ),
+        },
+        {
+          icon: Edit3,
+          title: <Trans id="Smart Editing">Smart Editing</Trans>,
+          text: (
+            <Trans id="Professional photo editing powered by AI intelligence">
+              Professional photo editing powered by AI intelligence
+            </Trans>
+          ),
+        },
+        {
+          icon: Crop,
+          title: <Trans id="Inpainting">Inpainting</Trans>,
+          text: (
+            <Trans id="Edit specific regions with precision and natural results">
+              Edit specific regions with precision and natural results
+            </Trans>
+          ),
+        },
+      ],
+    },
+    {
+      id: 'video',
+      alt: "Motion & Animation",
+      title: <Trans id="Motion & Animation">Motion & Animation</Trans>,
+      subtitle: <Trans id="Bring Your Ideas to Life">Bring Your Ideas to Life</Trans>,
+      description: (
+        <Trans id="Create captivating videos and animations effortlessly. From text-to-video generation to photo animation, unlock cinematic possibilities.">
+          Create captivating videos and animations effortlessly. From text-to-video generation to photo animation, unlock cinematic possibilities.
+        </Trans>
+      ),
+      icon: Video,
+      color: '#0F2D1F',
+      textColor: '#FF6FE0',
+      gradient: 'from-emerald-950 to-teal-900',
+      image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop',
+      items: [
+        {
+          icon: Clapperboard,
+          title: <Trans id="Text-to-Video">Text-to-Video</Trans>,
+          text: (
+            <Trans id="Generate professional videos from your descriptions">
+              Generate professional videos from your descriptions
+            </Trans>
+          ),
+        },
+        {
+          icon: Heart,
+          title: <Trans id="Photo Animation">Photo Animation</Trans>,
+          text: (
+            <Trans id="Transform static photos into living, breathing moments">
+              Transform static photos into living, breathing moments
+            </Trans>
+          ),
+        },
+        {
+          icon: Film,
+          title: <Trans id="Video Editing">Video Editing</Trans>,
+          text: (
+            <Trans id="Edit and enhance videos with AI-powered tools">
+              Edit and enhance videos with AI-powered tools
+            </Trans>
+          ),
+        },
+      ],
+    },
+    {
+      id: 'extension',
+      alt: "Browser Superpowers",
+      title: <Trans id="Browser Superpowers">Browser Superpowers</Trans>,
+      subtitle: <Trans id="Your AI Assistant Everywhere">Your AI Assistant Everywhere</Trans>,
+      description: (
+        <Trans id="Seamlessly integrate AI into your browsing experience. Get instant help, translations, and text improvements on any webpage.">
+          Seamlessly integrate AI into your browsing experience. Get instant help, translations, and text improvements on any webpage.
+        </Trans>
+      ),
+      icon: Puzzle,
+      color: '#F7E8C8',
+      textColor: '#1A40FF',
+      gradient: 'from-amber-50 to-yellow-50',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
+      items: [
+        {
+          icon: User,
+          title: <Trans id="On-Page Assistant">On-Page Assistant</Trans>,
+          text: (
+            <Trans id="Smart AI companion available on every website you visit">
+              Smart AI companion available on every website you visit
+            </Trans>
+          ),
+        },
+        {
+          icon: Edit3,
+          title: <Trans id="Magic Edit">Magic Edit</Trans>,
+          text: (
+            <Trans id="Instantly fix, improve, or rewrite any text with one click">
+              Instantly fix, improve, or rewrite any text with one click
+            </Trans>
+          ),
+        },
+        {
+          icon: Languages,
+          title: <Trans id="Live Translation">Live Translation</Trans>,
+          text: (
+            <Trans id="Real-time translation and enhancement as you type">
+              Real-time translation and enhancement as you type
+            </Trans>
+          ),
+        },
+      ],
+    },
+  ];
+
   return (
     <section id="features" className="relative py-16 sm:py-20 lg:py-32 overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -120,7 +257,7 @@ export default function FeaturesSection() {
                   <div className="aspect-[4/3] relative">
                     <img
                       src={feature.image}
-                      alt={feature.title}
+                      alt={feature.alt}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div

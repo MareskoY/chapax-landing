@@ -82,7 +82,7 @@ export default function Header() {
             <button
               onClick={toggleTheme}
               className="p-2 rounded-lg hover:bg-foreground/5 transition-colors"
-              aria-label="Toggle theme"
+              aria-label={i18n._("Toggle theme")}
             >
               {isDark ? (
                 <Sun className="w-5 h-5" />
@@ -100,7 +100,7 @@ export default function Header() {
                   await activateLocale(next);
                 }}
                 className="appearance-none rounded-lg border border-foreground/20 bg-background/80 backdrop-blur-sm px-4 py-2 pr-8 text-sm font-medium hover:border-foreground/40 hover:bg-background transition-all outline-none cursor-pointer focus:ring-2 focus:ring-foreground/20"
-                aria-label="Language"
+                aria-label={i18n._("Language")}
               >
                 {SUPPORTED_LOCALES.map((l) => (
                   <option key={l} value={l}>

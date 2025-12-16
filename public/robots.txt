@@ -1,0 +1,11 @@
+# robots.txt for Chapax
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://chapax.com/sitemap.xml
+
+# Disallow certain paths (if needed)
+# Disallow: /api/
+# Disallow: /admin/
+

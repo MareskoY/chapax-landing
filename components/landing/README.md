@@ -99,3 +99,4 @@ export default function Home() {
 - Плавные анимации и hover эффекты
 - Минималистичная навигация
 
+
