@@ -37,7 +37,7 @@ export default function PricingPage({ isRussia }: { isRussia: boolean }) {
     return [
       {
         id: "FREE",
-        title: "Free",
+        title: <Trans id="Free">Free</Trans>,
         priceLabel: "0",
         cta: <Trans id="Get in App">Get in App</Trans>,
         features: [
@@ -47,7 +47,7 @@ export default function PricingPage({ isRussia }: { isRussia: boolean }) {
       },
       {
         id: "PLUS",
-        title: "Plus",
+        title: <Trans id="Plus">Plus</Trans>,
         priceLabel: currencyLabel.replace(/^€\s*/, ""),
         cta: <Trans id="Get in App">Get in App</Trans>,
         features: [
@@ -102,13 +102,13 @@ export default function PricingPage({ isRussia }: { isRussia: boolean }) {
                   href="/rekvizity"
                   className="rounded-lg border border-foreground/20 px-4 py-2 text-sm font-medium hover:border-foreground/40 transition-all"
                 >
-                  Реквизиты
+                  <Trans id="Реквизиты">Реквизиты</Trans>
                 </a>
                 <a
                   href="/oferta"
                   className="rounded-lg border border-foreground/20 px-4 py-2 text-sm font-medium hover:border-foreground/40 transition-all"
                 >
-                  Договор оферты
+                  <Trans id="Договор оферты">Договор оферты</Trans>
                 </a>
               </div>
             )}

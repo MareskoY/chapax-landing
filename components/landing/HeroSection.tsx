@@ -61,7 +61,9 @@ export default function HeroSection() {
                     <div className="text-[10px] opacity-70">
                       <Trans id="Download on the">Download on the</Trans>
                     </div>
-                    <div className="text-sm font-semibold leading-tight">App Store</div>
+                    <div className="text-sm font-semibold leading-tight">
+                      <Trans id="App Store">App Store</Trans>
+                    </div>
                   </div>
                 </motion.a>
 
@@ -78,7 +80,9 @@ export default function HeroSection() {
                     <div className="text-[10px] opacity-70">
                       <Trans id="Get it on">Get it on</Trans>
                     </div>
-                    <div className="text-sm font-semibold leading-tight">Google Play</div>
+                    <div className="text-sm font-semibold leading-tight">
+                      <Trans id="Google Play">Google Play</Trans>
+                    </div>
                   </div>
                 </motion.a>
               </div>
@@ -110,7 +114,9 @@ export default function HeroSection() {
                   <div className="text-[10px] opacity-70">
                     <Trans id="Download on the">Download on the</Trans>
                   </div>
-                  <div className="text-sm font-semibold leading-tight">App Store</div>
+                  <div className="text-sm font-semibold leading-tight">
+                    <Trans id="App Store">App Store</Trans>
+                  </div>
                 </div>
               </motion.a>
 
@@ -127,7 +133,9 @@ export default function HeroSection() {
                   <div className="text-[10px] opacity-70">
                     <Trans id="Get it on">Get it on</Trans>
                   </div>
-                  <div className="text-sm font-semibold leading-tight">Google Play</div>
+                  <div className="text-sm font-semibold leading-tight">
+                    <Trans id="Google Play">Google Play</Trans>
+                  </div>
                 </div>
               </motion.a>
             </div>
@@ -172,7 +180,7 @@ export default function HeroSection() {
                     {/* App Screenshot */}
                     <img
                       src="/screen1.jpeg"
-                      alt="App Screenshot"
+                      alt="Chapax app screenshot"
                       className="absolute inset-0 w-full h-full object-cover rounded-b-none"
                     />
                   </div>

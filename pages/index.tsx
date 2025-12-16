@@ -11,16 +11,23 @@ export default function Home() {
   return (
     <div className="relative bg-background text-foreground overflow-x-hidden">
       <Head>
-        <title>{`Chapax — ${i18n._('Universal AI agent for the web')}`}</title>
+        <title>{`Chapax — ${i18n._("Universal AI agent for the web")}`}</title>
         <meta
           name="description"
-          content="Universal AI agent with a powerful web app and an on‑page browser extension. Chat, search, pair coding, deep thinking, and Magic Edit for instant text fixes and transformations."
+          content={i18n._(
+            "Universal AI agent with a powerful web app and an on‑page browser extension. Chat, search, pair coding, deep thinking, and Magic Edit for instant text fixes and transformations."
+          )}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Chapax — Universal AI agent for the web" />
+        <meta
+          property="og:title"
+          content={`Chapax — ${i18n._("Universal AI agent for the web")}`}
+        />
         <meta
           property="og:description"
-          content="Web app + browser extension with Magic Edit. Chat, search, pair coding, deep thinking, and instant fixes across any page and document."
+          content={i18n._(
+            "Web app + browser extension with Magic Edit. Chat, search, pair coding, deep thinking, and instant fixes across any page and document."
+          )}
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/favicon" />

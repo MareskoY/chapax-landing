@@ -3,38 +3,46 @@ import { motion } from "framer-motion";
 import { AppleIcon, GooglePlayIcon } from "./Icons";
 import { Globe, Puzzle } from "lucide-react";
 
-const platforms = [
-  {
-    id: 'webapp',
-    name: 'Web App',
-    description: 'Access from any browser',
-    icon: Globe,
-    href: 'https://app.chapax.ai',
-  },
-  {
-    id: 'extension',
-    name: 'Chrome Extension',
-    description: 'AI assistant on every page',
-    icon: Puzzle,
-    href: 'https://chromewebstore.google.com/detail/chapa-your-ai-assistant-p/lhdjjndpipjcmlbkglbaphamfpjiiipo',
-  },
-  {
-    id: 'ios',
-    name: 'iOS App',
-    description: 'Available on App Store',
-    icon: AppleIcon,
-    href: 'https://apps.apple.com/pt/app/chapax/id6754095566',
-  },
-  {
-    id: 'android',
-    name: 'Android App',
-    description: 'Available on Google Play',
-    icon: GooglePlayIcon,
-    href: 'https://play.google.com/store/apps/details?id=ai.chapax.app&hl=en',
-  },
-];
-
 export default function PlatformsSection() {
+  const platforms = [
+    {
+      id: 'webapp',
+      name: <Trans id="Web App">Web App</Trans>,
+      description: (
+        <Trans id="Access from any browser">Access from any browser</Trans>
+      ),
+      icon: Globe,
+      href: 'https://app.chapax.ai',
+    },
+    {
+      id: 'extension',
+      name: <Trans id="Chrome Extension">Chrome Extension</Trans>,
+      description: (
+        <Trans id="AI assistant on every page">AI assistant on every page</Trans>
+      ),
+      icon: Puzzle,
+      href: 'https://chromewebstore.google.com/detail/chapa-your-ai-assistant-p/lhdjjndpipjcmlbkglbaphamfpjiiipo',
+    },
+    {
+      id: 'ios',
+      name: <Trans id="iOS App">iOS App</Trans>,
+      description: (
+        <Trans id="Available on App Store">Available on App Store</Trans>
+      ),
+      icon: AppleIcon,
+      href: 'https://apps.apple.com/pt/app/chapax/id6754095566',
+    },
+    {
+      id: 'android',
+      name: <Trans id="Android App">Android App</Trans>,
+      description: (
+        <Trans id="Available on Google Play">Available on Google Play</Trans>
+      ),
+      icon: GooglePlayIcon,
+      href: 'https://play.google.com/store/apps/details?id=ai.chapax.app&hl=en',
+    },
+  ];
+
   return (
     <section id="platforms" className="relative py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

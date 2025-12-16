@@ -1,4 +1,4 @@
-import { Trans } from "@lingui/react";
+import { Trans, useLingui } from "@lingui/react";
 import { motion } from "framer-motion";
 
 const models = [
@@ -17,6 +17,7 @@ const models = [
 ];
 
 export default function ModelsSection() {
+  const { i18n } = useLingui();
   return (
     <section id="models" className="relative py-16 sm:py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -68,7 +69,7 @@ export default function ModelsSection() {
                 {/* NEW badge */}
                 {model.isNew && (
                   <span className="ml-1 px-1.5 py-0.5 text-[9px] sm:text-[10px] font-bold tracking-wider uppercase rounded bg-blue-500 text-white">
-                    NEW
+                    {i18n._("NEW")}
                   </span>
                 )}
               </div>
