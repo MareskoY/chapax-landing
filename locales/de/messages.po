@@ -22,12 +22,12 @@ msgstr "Universeller KI‑Agent fürs Web"
 #. js-lingui-explicit-id
 #: pages/index.tsx:17
 msgid "Universal AI agent with a powerful web app and an on‑page browser extension. Chat, search, pair coding, deep thinking, and Magic Edit for instant text fixes and transformations."
-msgstr "Universal AI agent with a powerful web app and an on‑page browser extension. Chat, search, pair coding, deep thinking, and Magic Edit for instant text fixes and transformations."
+msgstr "Universeller KI-Agent mit leistungsstarker Web-App und Browser-Erweiterung auf der Seite. Chat, Suche, Pair-Coding, Deep Thinking und Magic Edit für sofortige Textkorrekturen und Transformationen."
 
 #. js-lingui-explicit-id
 #: pages/index.tsx:28
 msgid "Web app + browser extension with Magic Edit. Chat, search, pair coding, deep thinking, and instant fixes across any page and document."
-msgstr "Web app + browser extension with Magic Edit. Chat, search, pair coding, deep thinking, and instant fixes across any page and document."
+msgstr "Web-App + Browser-Erweiterung mit Magic Edit. Chat, Suche, Pair-Coding, Deep Thinking und sofortige Korrekturen auf jeder Seite und in jedem Dokument."
 
 #. js-lingui-explicit-id
 #: pages/index.tsx:64
@@ -38,7 +38,7 @@ msgstr "Schnell. Minimal. Hilfreich."
 #: pages/pricing.tsx:40
 #: pages/pricing.tsx:152
 msgid "Free"
-msgstr "Free"
+msgstr "Kostenlos"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:42
@@ -46,12 +46,12 @@ msgstr "Free"
 #: pages/pricing.tsx:221
 #: pages/pricing.tsx:332
 msgid "Get in App"
-msgstr "Get in App"
+msgstr "In der App holen"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:44
 msgid "Chat with basic models"
-msgstr "Chat with basic models"
+msgstr "Chat mit Basismodellen"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:50
@@ -61,17 +61,17 @@ msgstr "Plus"
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:54
 msgid "Chat with advanced models"
-msgstr "Chat with advanced models"
+msgstr "Chat mit erweiterten Modellen"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:55
 msgid "Priority access"
-msgstr "Priority access"
+msgstr "Prioritätszugang"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:56
 msgid "Video Generation"
-msgstr "Video Generation"
+msgstr "Videogenerierung"
 
 #. js-lingui-explicit-id
 #: components/landing/Header.tsx:75
@@ -83,7 +83,7 @@ msgstr "Preise"
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:96
 msgid "Choose the perfect plan for your AI needs"
-msgstr "Choose the perfect plan for your AI needs"
+msgstr "Wähle den perfekten Plan für deine KI-Bedürfnisse"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:105
@@ -98,80 +98,80 @@ msgstr "Договор оферты"
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:137
 msgid "Popular"
-msgstr "Popular"
+msgstr "Beliebt"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:146
 msgid "Best to try the app"
-msgstr "Best to try the app"
+msgstr "Ideal zum Ausprobieren der App"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:146
 msgid "More headroom and priority"
-msgstr "More headroom and priority"
+msgstr "Mehr Spielraum und Priorität"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:153
 #: pages/pricing.tsx:160
 msgid "/mo"
-msgstr "/mo"
+msgstr "/Monat"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:170
 msgid "What you get"
-msgstr "What you get"
+msgstr "Was du bekommst"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:187
 msgid "≈ chat replies"
-msgstr "≈ chat replies"
+msgstr "≈ Chat-Antworten"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:191
 msgid "≈ code edits"
-msgstr "≈ code edits"
+msgstr "≈ Code-Bearbeitungen"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:195
 #: pages/pricing.tsx:199
 msgid "≈ image gens"
-msgstr "≈ image gens"
+msgstr "≈ Bildgenerierungen"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:209
 msgid "This plan is free for everyone."
-msgstr "This plan is free for everyone."
+msgstr "Dieser Plan ist für alle kostenlos."
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:238
 msgid "One‑time token packs"
-msgstr "One‑time token packs"
+msgstr "Einmalige Token-Pakete"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:241
 msgid "Need more tokens? Get them as you go"
-msgstr "Need more tokens? Get them as you go"
+msgstr "Brauchst du mehr Tokens? Hol sie dir nach Bedarf"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:266
 msgid "tokens/mo"
-msgstr "tokens/mo"
+msgstr "Tokens/Monat"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:272
 #: pages/pricing.tsx:278
 msgid "What are tokens?"
-msgstr "What are tokens?"
+msgstr "Was sind Tokens?"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:280
 msgid "Tokens explainer"
-msgstr "Tokens explainer"
+msgstr "Tokens-Erklärung"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:314
 msgid "tokens"
-msgstr "tokens"
+msgstr "Tokens"
 
 #. js-lingui-explicit-id
 #: components/landing/PlatformsSection.tsx:10
@@ -181,7 +181,7 @@ msgstr "Web‑App"
 #. js-lingui-explicit-id
 #: components/landing/PlatformsSection.tsx:12
 msgid "Access from any browser"
-msgstr "Access from any browser"
+msgstr "Zugriff von jedem Browser"
 
 #. js-lingui-explicit-id
 #: components/landing/PlatformsSection.tsx:19
@@ -191,7 +191,7 @@ msgstr "Chrome‑Erweiterung"
 #. js-lingui-explicit-id
 #: components/landing/PlatformsSection.tsx:21
 msgid "AI assistant on every page"
-msgstr "AI assistant on every page"
+msgstr "KI-Assistent auf jeder Seite"
 
 #. js-lingui-explicit-id
 #: components/landing/PlatformsSection.tsx:28
@@ -201,7 +201,7 @@ msgstr "iOS‑App"
 #. js-lingui-explicit-id
 #: components/landing/PlatformsSection.tsx:30
 msgid "Available on App Store"
-msgstr "Available on App Store"
+msgstr "Verfügbar im App Store"
 
 #. js-lingui-explicit-id
 #: components/landing/PlatformsSection.tsx:37
@@ -211,40 +211,40 @@ msgstr "Android‑App"
 #. js-lingui-explicit-id
 #: components/landing/PlatformsSection.tsx:39
 msgid "Available on Google Play"
-msgstr "Available on Google Play"
+msgstr "Verfügbar auf Google Play"
 
 #. js-lingui-explicit-id
 #: components/landing/PlatformsSection.tsx:57
 msgid "Available Everywhere"
-msgstr "Available Everywhere"
+msgstr "Überall verfügbar"
 
 #. js-lingui-explicit-id
 #: components/landing/PlatformsSection.tsx:60
 msgid "Choose your preferred platform and get started with Chapax today"
-msgstr "Choose your preferred platform and get started with Chapax today"
+msgstr "Wähle deine bevorzugte Plattform und starte noch heute mit Chapax"
 
 #. js-lingui-explicit-id
 #: components/landing/HeroSection.tsx:46
 #: components/landing/HeroSection.tsx:100
 #: components/landing/PlatformsSection.tsx:100
 msgid "Get Started"
-msgstr "Get Started"
+msgstr "Loslegen"
 
 #. js-lingui-explicit-id
 #: components/landing/HeroSection.tsx:28
 msgid "Universal AI agent."
-msgstr "Universal AI agent."
+msgstr "Universeller KI-Agent."
 
 #. js-lingui-explicit-id
 #: components/landing/HeroSection.tsx:32
 msgid "Chat, search, pair coding, deep thinking, generate images, edit photos, create videos, and bring photos to life — plus Magic Edit for instant text fixes and transformations."
-msgstr "Chat, search, pair coding, deep thinking, generate images, edit photos, create videos, and bring photos to life — plus Magic Edit for instant text fixes and transformations."
+msgstr "Chat, Suche, Pair-Coding, Deep Thinking, Bilder generieren, Fotos bearbeiten, Videos erstellen und Fotos zum Leben erwecken — plus Magic Edit für sofortige Textkorrekturen und Transformationen."
 
 #. js-lingui-explicit-id
 #: components/landing/HeroSection.tsx:62
 #: components/landing/HeroSection.tsx:115
 msgid "Download on the"
-msgstr "Download on the"
+msgstr "Herunterladen im"
 
 #. js-lingui-explicit-id
 #: components/landing/HeroSection.tsx:65
@@ -256,7 +256,7 @@ msgstr "App Store"
 #: components/landing/HeroSection.tsx:81
 #: components/landing/HeroSection.tsx:134
 msgid "Get it on"
-msgstr "Get it on"
+msgstr "Erhältlich bei"
 
 #. js-lingui-explicit-id
 #: components/landing/HeroSection.tsx:84
@@ -267,137 +267,137 @@ msgstr "Google Play"
 #. js-lingui-explicit-id
 #: components/landing/Header.tsx:66
 msgid "Features"
-msgstr "Features"
+msgstr "Funktionen"
 
 #. js-lingui-explicit-id
 #: components/landing/Header.tsx:69
 msgid "Models"
-msgstr "Models"
+msgstr "Modelle"
 
 #. js-lingui-explicit-id
 #: components/landing/Header.tsx:72
 msgid "Platforms"
-msgstr "Platforms"
+msgstr "Plattformen"
 
 #. js-lingui-explicit-id
 #: components/landing/Header.tsx:85
 msgid "Toggle theme"
-msgstr "Toggle theme"
+msgstr "Design umschalten"
 
 #. js-lingui-explicit-id
 #: components/landing/Header.tsx:103
 msgid "Language"
-msgstr "Language"
+msgstr "Sprache"
 
 #. js-lingui-explicit-id
 #: components/landing/Header.tsx:123
 msgid "Sign up"
-msgstr "Sign up"
+msgstr "Registrieren"
 
 #. js-lingui-explicit-id
 #: components/landing/Header.tsx:129
 msgid "Download App"
-msgstr "Download App"
+msgstr "App herunterladen"
 
 #. js-lingui-explicit-id
 #: components/landing/ModelsSection.tsx:32
 msgid "Powered by Leading AI Models"
-msgstr "Powered by Leading AI Models"
+msgstr "Angetrieben von führenden KI-Modellen"
 
 #. js-lingui-explicit-id
 #: components/landing/ModelsSection.tsx:35
 msgid "Access the most advanced AI models from top providers, all in one place"
-msgstr "Access the most advanced AI models from top providers, all in one place"
+msgstr "Zugriff auf die fortschrittlichsten KI-Modelle von Top-Anbietern, alles an einem Ort"
 
 #. js-lingui-explicit-id
 #: components/landing/ModelsSection.tsx:72
 msgid "NEW"
-msgstr "NEW"
+msgstr "NEU"
 
 #. js-lingui-explicit-id
 #: components/landing/ModelsSection.tsx:89
 msgid "And many more models coming soon"
-msgstr "And many more models coming soon"
+msgstr "Und viele weitere Modelle kommen bald"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:28
 msgid "Intelligent Conversations"
-msgstr "Intelligent Conversations"
+msgstr "Intelligente Konversationen"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:31
 msgid "AI Chat That Understands You"
-msgstr "AI Chat That Understands You"
+msgstr "KI-Chat, der dich versteht"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:34
 msgid "Experience next-generation AI chat powered by the world's most advanced language models. From deep analysis to real-time web search, our AI adapts to your needs."
-msgstr "Experience next-generation AI chat powered by the world's most advanced language models. From deep analysis to real-time web search, our AI adapts to your needs."
+msgstr "Erlebe den KI-Chat der nächsten Generation, angetrieben von den fortschrittlichsten Sprachmodellen der Welt. Von tiefgreifender Analyse bis zur Echtzeit-Websuche — unsere KI passt sich deinen Bedürfnissen an."
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:46
 msgid "Deep Thinking"
-msgstr "Deep Thinking"
+msgstr "Tiefes Denken"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:48
 msgid "Advanced reasoning and multi-step analysis for complex problems"
-msgstr "Advanced reasoning and multi-step analysis for complex problems"
+msgstr "Fortgeschrittenes Reasoning und mehrstufige Analyse für komplexe Probleme"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:55
 msgid "Real-Time Search"
-msgstr "Real-Time Search"
+msgstr "Echtzeit-Suche"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:57
 msgid "Access the latest information from across the web instantly"
-msgstr "Access the latest information from across the web instantly"
+msgstr "Greife sofort auf die neuesten Informationen aus dem gesamten Web zu"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:64
 msgid "Voice Mode"
-msgstr "Voice Mode"
+msgstr "Sprachmodus"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:66
 msgid "Natural voice conversations that feel completely human"
-msgstr "Natural voice conversations that feel completely human"
+msgstr "Natürliche Sprachkonversationen, die sich völlig menschlich anfühlen"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:76
 msgid "Visual Creation Studio"
-msgstr "Visual Creation Studio"
+msgstr "Visuelles Kreativstudio"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:77
 msgid "AI-Powered Image Magic"
-msgstr "AI-Powered Image Magic"
+msgstr "KI-betriebene Bildmagie"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:79
 msgid "Transform your ideas into stunning visuals. Generate, edit, and enhance images with professional-grade AI tools that understand your creative vision."
-msgstr "Transform your ideas into stunning visuals. Generate, edit, and enhance images with professional-grade AI tools that understand your creative vision."
+msgstr "Verwandle deine Ideen in beeindruckende Bilder. Generiere, bearbeite und verbessere Bilder mit professionellen KI-Tools, die deine kreative Vision verstehen."
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:91
 msgid "Image Generation"
-msgstr "Image Generation"
+msgstr "Bildgenerierung"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:93
 msgid "Create stunning artwork from text descriptions in seconds"
-msgstr "Create stunning artwork from text descriptions in seconds"
+msgstr "Erstelle beeindruckende Kunstwerke aus Textbeschreibungen in Sekunden"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:100
 msgid "Smart Editing"
-msgstr "Smart Editing"
+msgstr "Intelligente Bearbeitung"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:102
 msgid "Professional photo editing powered by AI intelligence"
-msgstr "Professional photo editing powered by AI intelligence"
+msgstr "Professionelle Fotobearbeitung, angetrieben von KI-Intelligenz"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:109
@@ -407,77 +407,77 @@ msgstr "Inpainting"
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:111
 msgid "Edit specific regions with precision and natural results"
-msgstr "Edit specific regions with precision and natural results"
+msgstr "Bearbeite bestimmte Bereiche mit Präzision und natürlichen Ergebnissen"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:121
 msgid "Motion & Animation"
-msgstr "Motion & Animation"
+msgstr "Bewegung & Animation"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:122
 msgid "Bring Your Ideas to Life"
-msgstr "Bring Your Ideas to Life"
+msgstr "Erwecke deine Ideen zum Leben"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:124
 msgid "Create captivating videos and animations effortlessly. From text-to-video generation to photo animation, unlock cinematic possibilities."
-msgstr "Create captivating videos and animations effortlessly. From text-to-video generation to photo animation, unlock cinematic possibilities."
+msgstr "Erstelle mühelos fesselnde Videos und Animationen. Von Text-zu-Video-Generierung bis zur Foto-Animation — erschließe kinematografische Möglichkeiten."
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:136
 msgid "Text-to-Video"
-msgstr "Text-to-Video"
+msgstr "Text zu Video"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:138
 msgid "Generate professional videos from your descriptions"
-msgstr "Generate professional videos from your descriptions"
+msgstr "Generiere professionelle Videos aus deinen Beschreibungen"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:145
 msgid "Photo Animation"
-msgstr "Photo Animation"
+msgstr "Foto-Animation"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:147
 msgid "Transform static photos into living, breathing moments"
-msgstr "Transform static photos into living, breathing moments"
+msgstr "Verwandle statische Fotos in lebendige, atmende Momente"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:154
 msgid "Video Editing"
-msgstr "Video Editing"
+msgstr "Videobearbeitung"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:156
 msgid "Edit and enhance videos with AI-powered tools"
-msgstr "Edit and enhance videos with AI-powered tools"
+msgstr "Bearbeite und verbessere Videos mit KI-gestützten Tools"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:166
 msgid "Browser Superpowers"
-msgstr "Browser Superpowers"
+msgstr "Browser-Superkräfte"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:167
 msgid "Your AI Assistant Everywhere"
-msgstr "Your AI Assistant Everywhere"
+msgstr "Dein KI-Assistent überall"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:169
 msgid "Seamlessly integrate AI into your browsing experience. Get instant help, translations, and text improvements on any webpage."
-msgstr "Seamlessly integrate AI into your browsing experience. Get instant help, translations, and text improvements on any webpage."
+msgstr "Integriere KI nahtlos in dein Surferlebnis. Erhalte sofortige Hilfe, Übersetzungen und Textverbesserungen auf jeder Webseite."
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:181
 msgid "On-Page Assistant"
-msgstr "On-Page Assistant"
+msgstr "Seitenassistent"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:183
 msgid "Smart AI companion available on every website you visit"
-msgstr "Smart AI companion available on every website you visit"
+msgstr "Intelligenter KI-Begleiter auf jeder Website, die du besuchst"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:190
@@ -487,47 +487,47 @@ msgstr "Magic Edit"
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:192
 msgid "Instantly fix, improve, or rewrite any text with one click"
-msgstr "Instantly fix, improve, or rewrite any text with one click"
+msgstr "Behebe, verbessere oder schreibe jeden Text sofort mit einem Klick um"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:199
 msgid "Live Translation"
-msgstr "Live Translation"
+msgstr "Live-Übersetzung"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:201
 msgid "Real-time translation and enhancement as you type"
-msgstr "Real-time translation and enhancement as you type"
+msgstr "Echtzeit-Übersetzung und Verbesserung während du tippst"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:221
 msgid "Everything You Need,"
-msgstr "Everything You Need,"
+msgstr "Alles, was du brauchst,"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:224
 msgid "All in One Place"
-msgstr "All in One Place"
+msgstr "Alles an einem Ort"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:228
 msgid "From intelligent conversations to stunning visuals, video creation to browser automation — unlock limitless possibilities with AI"
-msgstr "From intelligent conversations to stunning visuals, video creation to browser automation — unlock limitless possibilities with AI"
+msgstr "Von intelligenten Konversationen bis zu beeindruckenden Bildern, Videoerstellung bis zur Browser-Automatisierung — erschließe grenzenlose Möglichkeiten mit KI"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:358
 msgid "Try it now"
-msgstr "Try it now"
+msgstr "Jetzt ausprobieren"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:380
 msgid "Start Creating Now"
-msgstr "Start Creating Now"
+msgstr "Jetzt loslegen"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:387
 msgid "View All Platforms"
-msgstr "View All Platforms"
+msgstr "Alle Plattformen anzeigen"
 
 #. js-lingui-explicit-id
 #: components/landing/HeroSection.tsx:28
