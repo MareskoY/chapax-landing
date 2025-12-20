@@ -14,23 +14,12 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: pages/index.tsx:14
-#: pages/index.tsx:24
-msgid "Universal AI agent for the web"
-msgstr "Agent IA universel pour le web"
+#: components/landing/FeaturesSection.tsx:387
+msgid "View Pricing"
+msgstr "Voir les tarifs"
 
 #. js-lingui-explicit-id
-#: pages/index.tsx:17
-msgid "Universal AI agent with a powerful web app and an on‑page browser extension. Chat, search, pair coding, deep thinking, and Magic Edit for instant text fixes and transformations."
-msgstr "Agent IA universel avec une application web puissante et une extension de navigateur sur page. Chat, recherche, programmation en binôme, réflexion profonde et Magic Edit pour des corrections et transformations de texte instantanées."
-
-#. js-lingui-explicit-id
-#: pages/index.tsx:28
-msgid "Web app + browser extension with Magic Edit. Chat, search, pair coding, deep thinking, and instant fixes across any page and document."
-msgstr "Application web + extension de navigateur avec Magic Edit. Chat, recherche, programmation en binôme, réflexion profonde et corrections instantanées sur n'importe quelle page et document."
-
-#. js-lingui-explicit-id
-#: pages/index.tsx:64
+#: pages/index.tsx:42
 msgid "Fast. Minimal. Helpful."
 msgstr "Rapide. Minimal. Utile."
 
@@ -265,6 +254,26 @@ msgid "Google Play"
 msgstr "Google Play"
 
 #. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:32
+msgid "Powered by Leading AI Models"
+msgstr "Propulsé par les modèles d'IA leaders"
+
+#. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:35
+msgid "Access the most advanced AI models from top providers, all in one place"
+msgstr "Accédez aux modèles d'IA les plus avancés des meilleurs fournisseurs, le tout en un seul endroit"
+
+#. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:72
+msgid "NEW"
+msgstr "NOUVEAU"
+
+#. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:89
+msgid "And many more models coming soon"
+msgstr "Et bien d'autres modèles à venir"
+
+#. js-lingui-explicit-id
 #: components/landing/Header.tsx:66
 msgid "Features"
 msgstr "Fonctionnalités"
@@ -298,26 +307,6 @@ msgstr "S'inscrire"
 #: components/landing/Header.tsx:129
 msgid "Download App"
 msgstr "Télécharger l'application"
-
-#. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:32
-msgid "Powered by Leading AI Models"
-msgstr "Propulsé par les modèles d'IA leaders"
-
-#. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:35
-msgid "Access the most advanced AI models from top providers, all in one place"
-msgstr "Accédez aux modèles d'IA les plus avancés des meilleurs fournisseurs, le tout en un seul endroit"
-
-#. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:72
-msgid "NEW"
-msgstr "NOUVEAU"
-
-#. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:89
-msgid "And many more models coming soon"
-msgstr "Et bien d'autres modèles à venir"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:28
@@ -525,9 +514,25 @@ msgid "Start Creating Now"
 msgstr "Commencez à créer maintenant"
 
 #. js-lingui-explicit-id
+#: pages/index.tsx:14
+#: pages/index.tsx:24
+#~ msgid "Universal AI agent for the web"
+#~ msgstr "Agent IA universel pour le web"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:17
+#~ msgid "Universal AI agent with a powerful web app and an on‑page browser extension. Chat, search, pair coding, deep thinking, and Magic Edit for instant text fixes and transformations."
+#~ msgstr "Agent IA universel avec une application web puissante et une extension de navigateur sur page. Chat, recherche, programmation en binôme, réflexion profonde et Magic Edit pour des corrections et transformations de texte instantanées."
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:28
+#~ msgid "Web app + browser extension with Magic Edit. Chat, search, pair coding, deep thinking, and instant fixes across any page and document."
+#~ msgstr "Application web + extension de navigateur avec Magic Edit. Chat, recherche, programmation en binôme, réflexion profonde et corrections instantanées sur n'importe quelle page et document."
+
+#. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:387
-msgid "View All Platforms"
-msgstr "Voir toutes les plateformes"
+#~ msgid "View All Platforms"
+#~ msgstr "Voir toutes les plateformes"
 
 #. js-lingui-explicit-id
 #: components/landing/HeroSection.tsx:28

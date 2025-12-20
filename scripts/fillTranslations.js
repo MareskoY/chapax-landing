@@ -134,7 +134,7 @@ const dict = {
     'From intelligent conversations to stunning visuals, video creation to browser automation — unlock limitless possibilities with AI': 'От умных диалогов до ярких визуалов, от создания видео до автоматизации в браузере — раскройте безграничные возможности ИИ',
     'Try it now': 'Попробовать сейчас',
     'Start Creating Now': 'Начать создавать',
-    'View All Platforms': 'Посмотреть все платформы',
+    'View Pricing': 'Посмотреть тарифы',
     'Universal AI agent.': 'Универсальный ИИ‑агент.',
     'Get Started': 'Начать',
     'Download on the': 'Загрузить в',

@@ -381,10 +381,10 @@ export default function FeaturesSection() {
               <Sparkles className="w-5 h-5" />
             </a>
             <a
-              href="#platforms"
+              href="/pricing"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold rounded-2xl border-2 border-foreground/20 hover:border-foreground/40 transition-all"
             >
-              <Trans id="View All Platforms">View All Platforms</Trans>
+              <Trans id="View Pricing">View Pricing</Trans>
               <ArrowRight className="w-5 h-5" />
             </a>
           </div>
