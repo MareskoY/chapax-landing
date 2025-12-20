@@ -14,23 +14,12 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: pages/index.tsx:14
-#: pages/index.tsx:24
-msgid "Universal AI agent for the web"
-msgstr "Универсальный ИИ‑агент для веба"
+#: components/landing/FeaturesSection.tsx:387
+msgid "View Pricing"
+msgstr "Посмотреть тарифы"
 
 #. js-lingui-explicit-id
-#: pages/index.tsx:17
-msgid "Universal AI agent with a powerful web app and an on‑page browser extension. Chat, search, pair coding, deep thinking, and Magic Edit for instant text fixes and transformations."
-msgstr "Universal AI agent with a powerful web app and an on‑page browser extension. Chat, search, pair coding, deep thinking, and Magic Edit for instant text fixes and transformations."
-
-#. js-lingui-explicit-id
-#: pages/index.tsx:28
-msgid "Web app + browser extension with Magic Edit. Chat, search, pair coding, deep thinking, and instant fixes across any page and document."
-msgstr "Web app + browser extension with Magic Edit. Chat, search, pair coding, deep thinking, and instant fixes across any page and document."
-
-#. js-lingui-explicit-id
-#: pages/index.tsx:64
+#: pages/index.tsx:42
 msgid "Fast. Minimal. Helpful."
 msgstr "Быстро. Минимально. Полезно."
 
@@ -265,6 +254,26 @@ msgid "Google Play"
 msgstr "Google Play"
 
 #. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:32
+msgid "Powered by Leading AI Models"
+msgstr "Работает на ведущих ИИ‑моделях"
+
+#. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:35
+msgid "Access the most advanced AI models from top providers, all in one place"
+msgstr "Доступ к самым продвинутым моделям ИИ от лучших провайдеров в одном месте"
+
+#. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:72
+msgid "NEW"
+msgstr "NEW"
+
+#. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:89
+msgid "And many more models coming soon"
+msgstr "И ещё больше моделей скоро появится"
+
+#. js-lingui-explicit-id
 #: components/landing/Header.tsx:66
 msgid "Features"
 msgstr "Возможности"
@@ -298,26 +307,6 @@ msgstr "Зарегистрироваться"
 #: components/landing/Header.tsx:129
 msgid "Download App"
 msgstr "Скачать приложение"
-
-#. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:32
-msgid "Powered by Leading AI Models"
-msgstr "Работает на ведущих ИИ‑моделях"
-
-#. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:35
-msgid "Access the most advanced AI models from top providers, all in one place"
-msgstr "Доступ к самым продвинутым моделям ИИ от лучших провайдеров в одном месте"
-
-#. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:72
-msgid "NEW"
-msgstr "NEW"
-
-#. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:89
-msgid "And many more models coming soon"
-msgstr "И ещё больше моделей скоро появится"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:28
@@ -525,9 +514,25 @@ msgid "Start Creating Now"
 msgstr "Начать создавать"
 
 #. js-lingui-explicit-id
+#: pages/index.tsx:14
+#: pages/index.tsx:24
+#~ msgid "Universal AI agent for the web"
+#~ msgstr "Универсальный ИИ‑агент для веба"
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:17
+#~ msgid "Universal AI agent with a powerful web app and an on‑page browser extension. Chat, search, pair coding, deep thinking, and Magic Edit for instant text fixes and transformations."
+#~ msgstr "Universal AI agent with a powerful web app and an on‑page browser extension. Chat, search, pair coding, deep thinking, and Magic Edit for instant text fixes and transformations."
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:28
+#~ msgid "Web app + browser extension with Magic Edit. Chat, search, pair coding, deep thinking, and instant fixes across any page and document."
+#~ msgstr "Web app + browser extension with Magic Edit. Chat, search, pair coding, deep thinking, and instant fixes across any page and document."
+
+#. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:387
-msgid "View All Platforms"
-msgstr "Посмотреть все платформы"
+#~ msgid "View All Platforms"
+#~ msgstr "Посмотреть все платформы"
 
 #. js-lingui-explicit-id
 #: components/landing/HeroSection.tsx:28
