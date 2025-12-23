@@ -14,6 +14,106 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.company"
+msgstr "Unternehmen"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.support"
+msgstr "Support"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.pricing"
+msgstr "Preise"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.legal"
+msgstr "Rechtliches"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.terms"
+msgstr "Nutzungsbedingungen"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.privacy"
+msgstr "Datenschutzerklärung"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.oferta"
+msgstr "Oferta"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.rekvizity"
+msgstr "Rekvizity"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.mobile"
+msgstr "Mobil"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.terms_ios"
+msgstr "Bedingungen (iOS)"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.privacy_ios"
+msgstr "Datenschutz (iOS)"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.terms_android"
+msgstr "Bedingungen (Android)"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.privacy_android"
+msgstr "Datenschutz (Android)"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.contact"
+msgstr "Kontakt"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "support@chapax.ai"
+msgstr "support@chapax.ai"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "Telegram"
+msgstr "Telegram"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.delete_account"
+msgstr "Konto löschen"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "© {year} Chapax. All rights reserved."
+msgstr "© {year} Chapax. Alle Rechte vorbehalten."
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.tagline"
+msgstr "Schnell. Minimal. Hilfreich."
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.copyright"
+msgstr "© {year} Chapax. Alle Rechte vorbehalten."
+
+#. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:387
 msgid "View Pricing"
 msgstr "Preise ansehen"

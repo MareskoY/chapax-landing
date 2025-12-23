@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/landing/Footer";
 
 export default function Oferta() {
   return (
@@ -109,6 +110,8 @@ export default function Oferta() {
           <p className="text-muted-foreground">Дата актуализации: 28 августа 2025</p>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }

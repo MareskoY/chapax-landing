@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useState } from "react";
 import { useLingui } from "@lingui/react";
 import { activateLocale, SUPPORTED_LOCALES } from "../lib/i18n";
+import Footer from "../components/landing/Footer";
 
 type Platform = "web" | "extension" | "ios" | "android";
 
@@ -200,21 +201,7 @@ export default function SupportPage() {
         </div>
       </main>
 
-      <footer className="border-t border-foreground/10 py-6 text-xs">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
-          <div className="sm:flex sm:items-center sm:justify-between">
-            <div className="font-medium">Contact</div>
-            <div className="mt-2 sm:mt-0 space-y-1 text-muted-foreground">
-              <div>
-                Email: <a className="underline hover:opacity-100 opacity-80" href="mailto:support@chapax.ai">support@chapax.ai</a>
-              </div>
-              <div>
-                Telegram: <a className="underline hover:opacity-100 opacity-80" href="https://t.me/+jlcVGEVi7XViMmMy" target="_blank" rel="noreferrer">https://t.me/+jlcVGEVi7XViMmMy</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

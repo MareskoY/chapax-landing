@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/landing/Footer";
 
 export default function Rekvizity() {
   return (
@@ -96,6 +97,8 @@ export default function Rekvizity() {
           </section>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }

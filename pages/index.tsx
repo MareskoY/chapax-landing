@@ -4,6 +4,7 @@ import HeroSection from "../components/landing/HeroSection";
 import PlatformsSection from "../components/landing/PlatformsSection";
 import ModelsSection from "../components/landing/ModelsSection";
 import FeaturesSection from "../components/landing/FeaturesSection";
+import Footer from "../components/landing/Footer";
 import SEOHead from "../lib/seo/SEOHead";
 
 export default function Home() {
@@ -36,12 +37,7 @@ export default function Home() {
         <FeaturesSection />
       </main>
 
-      <footer className="relative border-t border-foreground/10 py-4 sm:py-6 text-xs text-muted-foreground">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 md:px-8">
-          <span>© {new Date().getFullYear()} Chapax</span>
-          <span><Trans id="Fast. Minimal. Helpful.">Fast. Minimal. Helpful.</Trans></span>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

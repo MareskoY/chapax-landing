@@ -5,6 +5,7 @@ import { Info, Check, Sparkles } from "lucide-react";
 import { Trans, useLingui } from "@lingui/react";
 import { activateLocale, SUPPORTED_LOCALES } from "../lib/i18n";
 import Header from "../components/landing/Header";
+import Footer from "../components/landing/Footer";
 import { motion } from "framer-motion";
 
 
@@ -246,11 +247,7 @@ export default function PricingPage({ isRussia }: { isRussia: boolean }) {
         </div>
       </main>
 
-      <footer className="relative border-t border-foreground/10 py-6 text-xs text-muted-foreground">
-        <div className="mx-auto flex max-w-7xl items-center justify-center px-4 sm:px-6">
-          <span>© {new Date().getFullYear()} Chapax</span>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
