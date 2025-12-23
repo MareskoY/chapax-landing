@@ -109,6 +109,11 @@ msgid "footer.tagline"
 msgstr "Быстро. Минимально. Полезно."
 
 #. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.copyright"
+msgstr "© {year} Chapax. Все права защищены."
+
+#. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:387
 msgid "View Pricing"
 msgstr "Посмотреть тарифы"

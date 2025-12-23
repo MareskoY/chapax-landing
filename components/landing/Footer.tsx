@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="relative border-t border-foreground/10 py-8 sm:py-12 text-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {/* Company */}
           <div>
             <h3 className="font-semibold mb-3">
@@ -61,35 +61,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Mobile Apps */}
-          <div>
-            <h3 className="font-semibold mb-3">
-              <Trans id="footer.mobile">Mobile</Trans>
-            </h3>
-            <ul className="space-y-2 text-muted-foreground">
-              <li>
-                <a href="/terms-ios" className="hover:text-foreground transition-colors">
-                  <Trans id="footer.terms_ios">Terms (iOS)</Trans>
-                </a>
-              </li>
-              <li>
-                <a href="/privacy-ios" className="hover:text-foreground transition-colors">
-                  <Trans id="footer.privacy_ios">Privacy (iOS)</Trans>
-                </a>
-              </li>
-              <li>
-                <a href="/terms-android" className="hover:text-foreground transition-colors">
-                  <Trans id="footer.terms_android">Terms (Android)</Trans>
-                </a>
-              </li>
-              <li>
-                <a href="/privacy-android" className="hover:text-foreground transition-colors">
-                  <Trans id="footer.privacy_android">Privacy (Android)</Trans>
-                </a>
-              </li>
-            </ul>
-          </div>
-
           {/* Contact */}
           <div>
             <h3 className="font-semibold mb-3">
@@ -119,9 +90,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-8 sm:mt-12 pt-6 border-t border-foreground/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
           <span>
-            <Trans id="© {year} Chapax. All rights reserved." values={{ year }}>
-              © {year} Chapax. All rights reserved.
-            </Trans>
+            {i18n._(
+              { id: "footer.copyright", message: "© {year} Chapax. All rights reserved." },
+              { year }
+            )}
           </span>
           <span>
             <Trans id="footer.tagline">Fast. Minimal. Helpful.</Trans>
