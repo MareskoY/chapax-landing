@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useLingui } from "@lingui/react";
 import { activateLocale, SUPPORTED_LOCALES } from "../lib/i18n";
+import Footer from "../components/landing/Footer";
 
 export default function Terms() {
   const { i18n } = useLingui();
@@ -40,8 +41,8 @@ export default function Terms() {
       </header>
 
       <main className="mx-auto max-w-3xl px-6 py-12 sm:py-16">
-        <h1 className="text-2xl font-semibold">Terms of Service (Draft)</h1>
-        <div className="mt-2 text-sm text-muted-foreground">Effective date: [Insert date]</div>
+        <h1 className="text-2xl font-semibold">Terms of Service</h1>
+        <div className="mt-2 text-sm text-muted-foreground">Effective date: December 22, 2024</div>
 
         <div className="mt-6 text-sm sm:text-base space-y-4">
           <p>
@@ -122,7 +123,13 @@ export default function Terms() {
           <p>You agree to defend and hold harmless ChapaX from claims arising out of your content or use of the Service in violation of these Terms.</p>
 
           <h2 className="text-base font-medium">Governing Law and Dispute Resolution</h2>
-          <p>Specify governing law and venue: [Insert jurisdiction]. Local consumer rights remain unaffected.</p>
+          <p>These Terms shall be governed by and construed in accordance with the laws of the Russian Federation. Any disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of the Russian Federation. Local consumer rights remain unaffected where applicable.</p>
+
+          <h2 className="text-base font-medium">Privacy</h2>
+          <p>Your use of the Service is also governed by our <a href="/privacy" className="text-primary hover:underline">Privacy Policy</a>. Please review our Privacy Policy to understand our practices.</p>
+
+          <h2 className="text-base font-medium">Service Providers</h2>
+          <p>ChapaX is operated by Nikita Bokarev (Individual Entrepreneur). Legal entity information is available upon request.</p>
 
           <h2 className="text-base font-medium">Contact</h2>
           <p>
@@ -130,6 +137,8 @@ export default function Terms() {
           </p>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }

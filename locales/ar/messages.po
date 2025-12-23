@@ -14,6 +14,101 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.company"
+msgstr "الشركة"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.support"
+msgstr "الدعم"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.pricing"
+msgstr "الأسعار"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.legal"
+msgstr "قانوني"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.terms"
+msgstr "شروط الخدمة"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.privacy"
+msgstr "سياسة الخصوصية"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.oferta"
+msgstr "Oferta"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.rekvizity"
+msgstr "Rekvizity"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.mobile"
+msgstr "الهاتف المحمول"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.terms_ios"
+msgstr "الشروط (iOS)"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.privacy_ios"
+msgstr "الخصوصية (iOS)"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.terms_android"
+msgstr "الشروط (Android)"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.privacy_android"
+msgstr "الخصوصية (Android)"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.contact"
+msgstr "تواصل"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "support@chapax.ai"
+msgstr "support@chapax.ai"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "Telegram"
+msgstr "Telegram"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.delete_account"
+msgstr "حذف الحساب"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "© {year} Chapax. All rights reserved."
+msgstr "© {year} Chapax. جميع الحقوق محفوظة."
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx
+msgid "footer.tagline"
+msgstr "سريع. بسيط. مفيد."
+
+#. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:387
 msgid "View Pricing"
 msgstr "عرض الأسعار"
