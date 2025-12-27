@@ -217,14 +217,18 @@ msgstr "≈ respuestas de chat"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:191
-msgid "≈ code edits"
-msgstr "≈ ediciones de código"
+msgid "≈ photo analysis"
+msgstr "≈ análisis de fotos"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:195
-#: pages/pricing.tsx:199
 msgid "≈ image gens"
 msgstr "≈ generaciones de imagen"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:199
+msgid "≈ edit photos"
+msgstr "≈ ediciones de fotos"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:209

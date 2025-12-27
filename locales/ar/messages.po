@@ -217,14 +217,18 @@ msgstr "≈ ردود الدردشة"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:191
-msgid "≈ code edits"
-msgstr "≈ تعديلات الكود"
+msgid "≈ photo analysis"
+msgstr "≈ تحليل الصور"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:195
-#: pages/pricing.tsx:199
 msgid "≈ image gens"
 msgstr "≈ توليدات الصور"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:199
+msgid "≈ edit photos"
+msgstr "≈ تعديل الصور"
 
 #. js-lingui-explicit-id
 #: pages/pricing.tsx:209

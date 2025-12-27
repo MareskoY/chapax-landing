@@ -25,11 +25,11 @@ type PlanInfo = {
 export default function PricingPage({ isRussia }: { isRussia: boolean }) {
   const { i18n } = useLingui();
   const freeLimits: Limits = {
-    chokensPerMonth: 500,
+    chokensPerMonth: 400,
   };
 
   const plusLimits: Limits = {
-    chokensPerMonth: 12000,
+    chokensPerMonth: 14000,
   };
 
   const currencyLabel = isRussia ? "₽ 1200" : "€ 12.5";
@@ -186,19 +186,19 @@ export default function PricingPage({ isRussia }: { isRussia: boolean }) {
                     ))}
                     <li className="flex items-center justify-between pt-2 border-t border-foreground/10">
                       <span className="text-muted-foreground"><Trans id="≈ chat replies">≈ chat replies</Trans></span>
-                      <span className="tabular-nums font-semibold">{p.id === "FREE" ? 450 : 15000}</span>
+                      <span className="tabular-nums font-semibold">{p.id === "FREE" ? 400 : 14000}</span>
                     </li>
                     <li className="flex items-center justify-between">
-                      <span className="text-muted-foreground"><Trans id="≈ code edits">≈ code edits</Trans></span>
-                      <span className="tabular-nums font-semibold">{p.id === "FREE" ? 200 : 6250}</span>
+                      <span className="text-muted-foreground"><Trans id="≈ photo analysis">≈ photo analysis</Trans></span>
+                      <span className="tabular-nums font-semibold">{p.id === "FREE" ? 150 : 8000}</span>
                     </li>
                     <li className="flex items-center justify-between">
                       <span className="text-muted-foreground"><Trans id="≈ image gens">≈ image gens</Trans></span>
-                      <span className="tabular-nums font-semibold">{p.id === "FREE" ? 5 : 450}</span>
+                      <span className="tabular-nums font-semibold">{p.id === "FREE" ? 4 : 900}</span>
                     </li>
                     <li className="flex items-center justify-between">
-                      <span className="text-muted-foreground"><Trans id="≈ image gens">≈ edit photos</Trans></span>
-                      <span className="tabular-nums font-semibold">{p.id === "FREE" ? 5 : 550}</span>
+                      <span className="text-muted-foreground"><Trans id="≈ edit photos">≈ edit photos</Trans></span>
+                      <span className="tabular-nums font-semibold">{p.id === "FREE" ? 5 : 1150}</span>
                     </li>
                   </ul>
                 </div>
@@ -285,10 +285,10 @@ function TokensSummary({ chokens, isPlus }: { chokens: number; isPlus?: boolean 
 function TokenPacks({ isRussia }: { isRussia: boolean }) {
   type Pack = { id: string; amount: number; priceEUR?: number; priceRUB?: number };
   const packs: Pack[] = [
-    { id: "pack-5k", amount: 5000, priceEUR: 5, priceRUB: 490 },
-    { id: "pack-10k", amount: 10000, priceEUR: 10, priceRUB: 950 },
-    { id: "pack-20k", amount: 20000, priceEUR: 20, priceRUB: 1950 },
-    { id: "pack-40k", amount: 40000, priceEUR: 38, priceRUB: 3750 },
+    { id: "pack-5k", amount: 5000, priceEUR: 5, priceRUB: 480 },
+    { id: "pack-10k", amount: 10000, priceEUR: 10, priceRUB: 940 },
+    { id: "pack-20k", amount: 20000, priceEUR: 20, priceRUB: 1860 },
+    { id: "pack-40k", amount: 40000, priceEUR: 38, priceRUB: 3700 },
   ];
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
