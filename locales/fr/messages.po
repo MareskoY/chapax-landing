@@ -14,257 +14,54 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.company"
-msgstr "Société"
+#: components/landing/AdsSection.tsx:10
+msgid "ads.card.productVideo.title"
+msgstr "Publicités vidéo produit"
 
 #. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.support"
-msgstr "Support"
+#: components/landing/AdsSection.tsx:12
+msgid "ads.card.productVideo.desc"
+msgstr "Utilisez vos photos produit pour générer des vidéos propres, prêtes pour votre marque — idéales pour les ads, landing pages et marketplaces."
 
 #. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.pricing"
-msgstr "Tarifs"
+#: components/landing/AdsSection.tsx:20
+msgid "ads.card.shorts.title"
+msgstr "Shorts, TikToks & Reels"
 
 #. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.legal"
-msgstr "Mentions légales"
+#: components/landing/AdsSection.tsx:22
+msgid "ads.card.shorts.desc"
+msgstr "Créez des vidéos courtes qui arrêtent le scroll avec des hooks, des scènes et des variations — prêtes à publier ou à tester."
 
 #. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.terms"
-msgstr "Conditions d’utilisation"
+#: components/landing/AdsSection.tsx:30
+msgid "ads.card.cards.title"
+msgstr "Fiches produit & créas"
 
 #. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.privacy"
-msgstr "Politique de confidentialité"
+#: components/landing/AdsSection.tsx:32
+msgid "ads.card.cards.desc"
+msgstr "Générez des fiches produit, bannières et carrousels avec un style cohérent et une itération rapide."
 
 #. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.oferta"
-msgstr "Oferta"
+#: components/landing/AdsSection.tsx:40
+msgid "ads.card.variants.title"
+msgstr "Variantes A/B en quelques minutes"
 
 #. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.rekvizity"
-msgstr "Rekvizity"
+#: components/landing/AdsSection.tsx:42
+msgid "ads.card.variants.desc"
+msgstr "Créez instantanément des angles, des formats et des langues — trouvez ce qui convertit sans tâches répétitives."
 
 #. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.mobile"
-msgstr "Mobile"
+#: components/landing/AdsSection.tsx:60
+msgid "ads.title"
+msgstr "Créez des publicités avec l’IA"
 
 #. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.terms_ios"
-msgstr "Conditions (iOS)"
-
-#. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.privacy_ios"
-msgstr "Confidentialité (iOS)"
-
-#. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.terms_android"
-msgstr "Conditions (Android)"
-
-#. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.privacy_android"
-msgstr "Confidentialité (Android)"
-
-#. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.contact"
-msgstr "Contact"
-
-#. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "support@chapax.ai"
-msgstr "support@chapax.ai"
-
-#. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "Telegram"
-msgstr "Telegram"
-
-#. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.delete_account"
-msgstr "Supprimer le compte"
-
-#. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "© {year} Chapax. All rights reserved."
-msgstr "© {year} Chapax. Tous droits réservés."
-
-#. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.tagline"
-msgstr "Rapide. Minimal. Utile."
-
-#. js-lingui-explicit-id
-#: components/landing/Footer.tsx
-msgid "footer.copyright"
-msgstr "© {year} Chapax. Tous droits réservés."
-
-#. js-lingui-explicit-id
-#: components/landing/FeaturesSection.tsx:387
-msgid "View Pricing"
-msgstr "Voir les tarifs"
-
-#. js-lingui-explicit-id
-#: pages/index.tsx:42
-msgid "Fast. Minimal. Helpful."
-msgstr "Rapide. Minimal. Utile."
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:40
-#: pages/pricing.tsx:152
-msgid "Free"
-msgstr "Gratuit"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:42
-#: pages/pricing.tsx:52
-#: pages/pricing.tsx:221
-#: pages/pricing.tsx:332
-msgid "Get in App"
-msgstr "Obtenir dans l'app"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:44
-msgid "Chat with basic models"
-msgstr "Chat avec des modèles de base"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:50
-msgid "Plus"
-msgstr "Plus"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:54
-msgid "Chat with advanced models"
-msgstr "Chat avec des modèles avancés"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:55
-msgid "Priority access"
-msgstr "Accès prioritaire"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:56
-msgid "Video Generation"
-msgstr "Génération de vidéo"
-
-#. js-lingui-explicit-id
-#: components/landing/Header.tsx:75
-#: pages/pricing.tsx:66
-#: pages/pricing.tsx:93
-msgid "Pricing"
-msgstr "Tarifs"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:96
-msgid "Choose the perfect plan for your AI needs"
-msgstr "Choisissez le plan parfait pour vos besoins en IA"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:105
-msgid "Реквизиты"
-msgstr "Réквизиты"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:111
-msgid "Договор оферты"
-msgstr "Договор оферты"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:137
-msgid "Popular"
-msgstr "Populaire"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:146
-msgid "Best to try the app"
-msgstr "Idéal pour essayer l'app"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:146
-msgid "More headroom and priority"
-msgstr "Plus de marge et priorité"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:153
-#: pages/pricing.tsx:160
-msgid "/mo"
-msgstr "/mois"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:170
-msgid "What you get"
-msgstr "Ce que vous obtenez"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:187
-msgid "≈ chat replies"
-msgstr "≈ réponses de chat"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:191
-msgid "≈ photo analysis"
-msgstr "≈ analyse de photos"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:195
-msgid "≈ image gens"
-msgstr "≈ générations d'image"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:199
-msgid "≈ edit photos"
-msgstr "≈ éditions de photos"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:209
-msgid "This plan is free for everyone."
-msgstr "Ce plan est gratuit pour tout le monde."
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:238
-msgid "One‑time token packs"
-msgstr "Packs de jetons uniques"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:241
-msgid "Need more tokens? Get them as you go"
-msgstr "Besoin de plus de jetons ? Obtenez-les au fur et à mesure"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:266
-msgid "tokens/mo"
-msgstr "jetons/mois"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:272
-#: pages/pricing.tsx:278
-msgid "What are tokens?"
-msgstr "Que sont les jetons ?"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:280
-msgid "Tokens explainer"
-msgstr "Explication des jetons"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:314
-msgid "tokens"
-msgstr "jetons"
+#: components/landing/AdsSection.tsx:63
+msgid "ads.subtitle"
+msgstr "Transformez des images produit en vidéos, générez des créas pour votre boutique et publiez du contenu pour n’importe quelle plateforme — plus vite."
 
 #. js-lingui-explicit-id
 #: components/landing/PlatformsSection.tsx:10
@@ -324,56 +121,165 @@ msgid "Get Started"
 msgstr "Commencer"
 
 #. js-lingui-explicit-id
-#: components/landing/HeroSection.tsx:28
-msgid "Universal AI agent."
-msgstr "Agent IA universel."
+#: pages/pricing.tsx:41
+#: pages/pricing.tsx:153
+msgid "Free"
+msgstr "Gratuit"
 
 #. js-lingui-explicit-id
-#: components/landing/HeroSection.tsx:32
-msgid "Chat, search, pair coding, deep thinking, generate images, edit photos, create videos, and bring photos to life — plus Magic Edit for instant text fixes and transformations."
-msgstr "Chat, recherche, programmation en binôme, réflexion profonde, génération d'images, édition de photos, création de vidéos et donner vie aux photos — plus Magic Edit pour des corrections et transformations de texte instantanées."
+#: pages/pricing.tsx:43
+#: pages/pricing.tsx:53
+#: pages/pricing.tsx:222
+#: pages/pricing.tsx:329
+msgid "Get in App"
+msgstr "Obtenir dans l'app"
 
 #. js-lingui-explicit-id
-#: components/landing/HeroSection.tsx:62
-#: components/landing/HeroSection.tsx:115
-msgid "Download on the"
-msgstr "Télécharger sur"
+#: pages/pricing.tsx:45
+msgid "Chat with basic models"
+msgstr "Chat avec des modèles de base"
 
 #. js-lingui-explicit-id
-#: components/landing/HeroSection.tsx:65
-#: components/landing/HeroSection.tsx:118
-msgid "App Store"
-msgstr "App Store"
+#: pages/pricing.tsx:51
+msgid "Plus"
+msgstr "Plus"
 
 #. js-lingui-explicit-id
-#: components/landing/HeroSection.tsx:81
-#: components/landing/HeroSection.tsx:134
-msgid "Get it on"
-msgstr "Disponible sur"
+#: pages/pricing.tsx:55
+msgid "Chat with advanced models"
+msgstr "Chat avec des modèles avancés"
 
 #. js-lingui-explicit-id
-#: components/landing/HeroSection.tsx:84
-#: components/landing/HeroSection.tsx:137
-msgid "Google Play"
-msgstr "Google Play"
+#: pages/pricing.tsx:56
+msgid "Priority access"
+msgstr "Accès prioritaire"
 
 #. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:32
+#: pages/pricing.tsx:57
+msgid "Video Generation"
+msgstr "Génération de vidéo"
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:75
+#: pages/pricing.tsx:67
+#: pages/pricing.tsx:94
+msgid "Pricing"
+msgstr "Tarifs"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:97
+msgid "Choose the perfect plan for your AI needs"
+msgstr "Choisissez le plan parfait pour vos besoins en IA"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:106
+msgid "Реквизиты"
+msgstr "Réквизиты"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:112
+msgid "Договор оферты"
+msgstr "Договор оферты"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:138
+msgid "Popular"
+msgstr "Populaire"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:147
+msgid "Best to try the app"
+msgstr "Idéal pour essayer l'app"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:147
+msgid "More headroom and priority"
+msgstr "Plus de marge et priorité"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:154
+#: pages/pricing.tsx:161
+msgid "/mo"
+msgstr "/mois"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:171
+msgid "What you get"
+msgstr "Ce que vous obtenez"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:188
+msgid "≈ chat replies"
+msgstr "≈ réponses de chat"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:192
+msgid "≈ photo analysis"
+msgstr "≈ analyse de photos"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:196
+msgid "≈ image gens"
+msgstr "≈ générations d'image"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:200
+msgid "≈ edit photos"
+msgstr "≈ éditions de photos"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:210
+msgid "This plan is free for everyone."
+msgstr "Ce plan est gratuit pour tout le monde."
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:239
+msgid "One‑time token packs"
+msgstr "Packs de jetons uniques"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:242
+msgid "Need more tokens? Get them as you go"
+msgstr "Besoin de plus de jetons ? Obtenez-les au fur et à mesure"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:263
+msgid "tokens/mo"
+msgstr "jetons/mois"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:269
+#: pages/pricing.tsx:275
+msgid "What are tokens?"
+msgstr "Que sont les jetons ?"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:277
+msgid "Tokens explainer"
+msgstr "Explication des jetons"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:311
+msgid "tokens"
+msgstr "jetons"
+
+#. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:36
 msgid "Powered by Leading AI Models"
 msgstr "Propulsé par les modèles d'IA leaders"
 
 #. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:35
+#: components/landing/ModelsSection.tsx:39
 msgid "Access the most advanced AI models from top providers, all in one place"
 msgstr "Accédez aux modèles d'IA les plus avancés des meilleurs fournisseurs, le tout en un seul endroit"
 
 #. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:72
+#: components/landing/ModelsSection.tsx:76
 msgid "NEW"
 msgstr "NOUVEAU"
 
 #. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:89
+#: components/landing/ModelsSection.tsx:93
 msgid "And many more models coming soon"
 msgstr "Et bien d'autres modèles à venir"
 
@@ -411,6 +317,100 @@ msgstr "S'inscrire"
 #: components/landing/Header.tsx:129
 msgid "Download App"
 msgstr "Télécharger l'application"
+
+#. js-lingui-explicit-id
+#: components/landing/HeroSection.tsx:28
+msgid "Universal AI agent."
+msgstr "Agent IA universel."
+
+#. js-lingui-explicit-id
+#: components/landing/HeroSection.tsx:32
+msgid "Chat, search, pair coding, deep thinking, generate images, edit photos, create videos, and bring photos to life — plus Magic Edit for instant text fixes and transformations."
+msgstr "Chat, recherche, programmation en binôme, réflexion profonde, génération d'images, édition de photos, création de vidéos et donner vie aux photos — plus Magic Edit pour des corrections et transformations de texte instantanées. Donnez vie à vos idées et créez des publicités et du contenu en quelques minutes."
+
+#. js-lingui-explicit-id
+#: components/landing/HeroSection.tsx:62
+#: components/landing/HeroSection.tsx:115
+msgid "Download on the"
+msgstr "Télécharger sur"
+
+#. js-lingui-explicit-id
+#: components/landing/HeroSection.tsx:65
+#: components/landing/HeroSection.tsx:118
+msgid "App Store"
+msgstr "App Store"
+
+#. js-lingui-explicit-id
+#: components/landing/HeroSection.tsx:81
+#: components/landing/HeroSection.tsx:134
+msgid "Get it on"
+msgstr "Disponible sur"
+
+#. js-lingui-explicit-id
+#: components/landing/HeroSection.tsx:84
+#: components/landing/HeroSection.tsx:137
+msgid "Google Play"
+msgstr "Google Play"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:15
+msgid "footer.company"
+msgstr "Société"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:20
+msgid "footer.support"
+msgstr "Support"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:25
+msgid "footer.pricing"
+msgstr "Tarifs"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:34
+msgid "footer.legal"
+msgstr "Mentions légales"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:39
+msgid "footer.terms"
+msgstr "Conditions d’utilisation"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:44
+msgid "footer.privacy"
+msgstr "Politique de confidentialité"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:51
+msgid "footer.oferta"
+msgstr "Oferta"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:56
+msgid "footer.rekvizity"
+msgstr "Rekvizity"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:67
+msgid "footer.contact"
+msgstr "Contact"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:75
+msgid "support@chapax.ai"
+msgstr "support@chapax.ai"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:83
+msgid "footer.delete_account"
+msgstr "Supprimer le compte"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:99
+msgid "footer.tagline"
+msgstr "Rapide. Minimal. Utile."
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:28
@@ -618,6 +618,51 @@ msgid "Start Creating Now"
 msgstr "Commencez à créer maintenant"
 
 #. js-lingui-explicit-id
+#: components/landing/FeaturesSection.tsx:387
+msgid "View Pricing"
+msgstr "Voir les tarifs"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:
+#~ msgid "footer.mobile"
+#~ msgstr "Mobile"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:
+#~ msgid "footer.terms_ios"
+#~ msgstr "Conditions (iOS)"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:
+#~ msgid "footer.privacy_ios"
+#~ msgstr "Confidentialité (iOS)"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:
+#~ msgid "footer.terms_android"
+#~ msgstr "Conditions (Android)"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:
+#~ msgid "footer.privacy_android"
+#~ msgstr "Confidentialité (Android)"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:
+#~ msgid "Telegram"
+#~ msgstr "Telegram"
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:
+#~ msgid "© {year} Chapax. All rights reserved."
+#~ msgstr "© {year} Chapax. Tous droits réservés."
+
+#. js-lingui-explicit-id
+#: pages/index.tsx:42
+#~ msgid "Fast. Minimal. Helpful."
+#~ msgstr "Rapide. Minimal. Utile."
+
+#. js-lingui-explicit-id
 #: pages/index.tsx:14
 #: pages/index.tsx:24
 #~ msgid "Universal AI agent for the web"
@@ -780,6 +825,11 @@ msgstr "Commencez à créer maintenant"
 #: pages/pricing.tsx:184
 #~ msgid "A token is a unified credit used to price different AI features consistently. One token roughly equals a small chat response. Heavier tasks (coding, images) consume more tokens."
 #~ msgstr "Un jeton est un crédit unifié utilisé pour tarifer de manière cohérente différentes fonctionnalités d’IA. Un jeton équivaut à peu près à une petite réponse de chat. Les tâches plus lourdes (code, images) consomment davantage de jetons."
+
+#. js-lingui-explicit-id
+#: components/landing/Footer.tsx:94
+msgid "footer.copyright"
+msgstr "© {year} Chapax. Tous droits réservés."
 
 #: components/landing/PlatformsSection.tsx:11
 #~ msgid "Access from any browser"

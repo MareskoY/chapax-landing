@@ -22,7 +22,7 @@ export const seoMetadata: Record<SupportedLocale, SEOMetadata> = {
     title: "Chapax — Universal AI Agent for the Web",
     titleTemplate: "Chapax — %s",
     description:
-      "Universal AI agent with a powerful web app and browser extension. Chat with AI models, deep search, pair coding, deep thinking, and Magic Edit for instant text fixes across any page.",
+      "Universal AI agent with a powerful web app and browser extension. Chat with AI models, deep search, pair coding, deep thinking, Magic Edit — plus generate product videos, ads, and content for TikTok, Shorts, and Reels.",
     keywords: [
       "AI assistant",
       "artificial intelligence",
@@ -42,20 +42,26 @@ export const seoMetadata: Record<SupportedLocale, SEOMetadata> = {
       "magic edit",
       "AI writing",
       "AI tools",
+      "AI ad generator",
+      "AI marketing",
+      "product video ads",
+      "TikTok ad generator",
+      "Shorts generator",
+      "Reels generator",
     ],
     ogTitle: "Chapax — Universal AI Agent for the Web",
     ogDescription:
-      "Web app + browser extension with Magic Edit. Chat with leading AI models, deep search, pair coding, instant text fixes across any page and document.",
+      "Web app + browser extension with Magic Edit. Chat with leading AI models, deep search, pair coding — and generate ads & product videos for TikTok, Shorts, and Reels.",
     twitterTitle: "Chapax — Universal AI Agent for the Web",
     twitterDescription:
-      "Universal AI agent: chat, search, code, and edit with AI. Powerful web app + browser extension with Magic Edit.",
+      "Universal AI agent: chat, search, code, and edit with AI — plus generate ads, product videos, and content fast.",
     siteName: "Chapax",
   },
   ru: {
     title: "Chapax — Универсальный AI-агент для веба",
     titleTemplate: "Chapax — %s",
     description:
-      "Универсальный AI-агент с мощным веб-приложением и расширением для браузера. Общайтесь с AI-моделями, глубокий поиск, парное программирование, глубокое мышление и Magic Edit для мгновенных исправлений текста на любой странице.",
+      "Универсальный AI-агент с мощным веб-приложением и расширением для браузера. Общайтесь с AI-моделями, делайте глубокий поиск, парное программирование, глубокое мышление и Magic Edit — плюс создавайте рекламу, продуктовые видео и контент для TikTok, Shorts и Reels.",
     keywords: [
       "AI ассистент",
       "искусственный интеллект",
@@ -75,20 +81,26 @@ export const seoMetadata: Record<SupportedLocale, SEOMetadata> = {
       "магическое редактирование",
       "AI письмо",
       "AI инструменты",
+      "генератор рекламы",
+      "создание рекламы с ИИ",
+      "ИИ маркетинг",
+      "генерация видео рекламы",
+      "TikTok генератор",
+      "Shorts генератор",
     ],
     ogTitle: "Chapax — Универсальный AI-агент для веба",
     ogDescription:
-      "Веб-приложение + расширение для браузера с Magic Edit. Общайтесь с ведущими AI-моделями, глубокий поиск, парное программирование, мгновенные исправления текста на любой странице.",
+      "Веб-приложение + расширение для браузера с Magic Edit. Общайтесь с ведущими AI-моделями, делайте глубокий поиск и создавайте рекламу/продуктовые видео для TikTok, Shorts и Reels.",
     twitterTitle: "Chapax — Универсальный AI-агент для веба",
     twitterDescription:
-      "Универсальный AI-агент: общение, поиск, код и редактирование с помощью AI. Мощное веб-приложение + расширение для браузера с Magic Edit.",
+      "Универсальный AI-агент: общение, поиск, код и редактирование с помощью AI — плюс генерация рекламы, продуктовых видео и контента.",
     siteName: "Chapax",
   },
   es: {
     title: "Chapax — Agente de IA Universal para la Web",
     titleTemplate: "Chapax — %s",
     description:
-      "Agente de IA universal con una potente aplicación web y extensión de navegador. Chatea con modelos de IA, búsqueda profunda, programación en pareja, pensamiento profundo y Magic Edit para correcciones instantáneas de texto en cualquier página.",
+      "Agente de IA universal con una potente aplicación web y extensión de navegador. Chat, búsqueda profunda, programación en pareja, pensamiento profundo y Magic Edit — además de anuncios, vídeos de producto y contenido para TikTok, Shorts y Reels.",
     keywords: [
       "asistente de IA",
       "inteligencia artificial",
@@ -108,20 +120,26 @@ export const seoMetadata: Record<SupportedLocale, SEOMetadata> = {
       "edición mágica",
       "escritura con IA",
       "herramientas de IA",
+      "generador de anuncios con IA",
+      "marketing con IA",
+      "anuncios de vídeo de producto",
+      "generador de anuncios para TikTok",
+      "generador de Shorts",
+      "generador de Reels",
     ],
     ogTitle: "Chapax — Agente de IA Universal para la Web",
     ogDescription:
-      "Aplicación web + extensión de navegador con Magic Edit. Chatea con los principales modelos de IA, búsqueda profunda, programación en pareja, correcciones instantáneas de texto en cualquier página.",
+      "Aplicación web + extensión con Magic Edit. Chat con modelos líderes, búsqueda profunda y creación rápida de anuncios y vídeos de producto para TikTok, Shorts y Reels.",
     twitterTitle: "Chapax — Agente de IA Universal para la Web",
     twitterDescription:
-      "Agente de IA universal: chat, búsqueda, código y edición con IA. Potente aplicación web + extensión de navegador con Magic Edit.",
+      "Agente de IA universal: chat, búsqueda, código y edición con IA — además de anuncios, vídeos de producto y contenido.",
     siteName: "Chapax",
   },
   de: {
     title: "Chapax — Universeller KI-Agent für das Web",
     titleTemplate: "Chapax — %s",
     description:
-      "Universeller KI-Agent mit leistungsstarker Web-App und Browser-Erweiterung. Chatten Sie mit KI-Modellen, tiefe Suche, Pair-Programming, tiefes Denken und Magic Edit für sofortige Textkorrektur auf jeder Seite.",
+      "Universeller KI-Agent mit Web-App und Browser-Erweiterung. Chat, Tiefensuche, Pair-Programming, tiefes Denken und Magic Edit — plus Produktvideos, Werbung und Content für TikTok, Shorts und Reels generieren.",
     keywords: [
       "KI-Assistent",
       "künstliche Intelligenz",
@@ -141,20 +159,26 @@ export const seoMetadata: Record<SupportedLocale, SEOMetadata> = {
       "Magic Edit",
       "KI-Schreiben",
       "KI-Tools",
+      "KI Werbegenerator",
+      "KI Marketing",
+      "Produktvideo Werbung",
+      "TikTok Werbegenerator",
+      "Shorts Generator",
+      "Reels Generator",
     ],
     ogTitle: "Chapax — Universeller KI-Agent für das Web",
     ogDescription:
-      "Web-App + Browser-Erweiterung mit Magic Edit. Chatten Sie mit führenden KI-Modellen, Tiefensuche, Pair-Programming, sofortige Textkorrektur auf jeder Seite.",
+      "Web-App + Browser-Erweiterung mit Magic Edit. Chatten, suchen, programmieren — und Werbung sowie Produktvideos für TikTok, Shorts und Reels erstellen.",
     twitterTitle: "Chapax — Universeller KI-Agent für das Web",
     twitterDescription:
-      "Universeller KI-Agent: Chat, Suche, Code und Bearbeitung mit KI. Leistungsstarke Web-App + Browser-Erweiterung mit Magic Edit.",
+      "Universeller KI-Agent: Chat, Suche, Code und Bearbeitung mit KI — plus Werbung und Content schneller erstellen.",
     siteName: "Chapax",
   },
   fr: {
     title: "Chapax — Agent IA Universel pour le Web",
     titleTemplate: "Chapax — %s",
     description:
-      "Agent IA universel avec une application web puissante et une extension de navigateur. Discutez avec des modèles d'IA, recherche approfondie, programmation en binôme, réflexion profonde et Magic Edit pour des corrections de texte instantanées sur n'importe quelle page.",
+      "Agent IA universel avec application web et extension de navigateur. Chat, recherche approfondie, programmation en binôme, réflexion profonde et Magic Edit — plus création de publicités, vidéos produit et contenu pour TikTok, Shorts et Reels.",
     keywords: [
       "assistant IA",
       "intelligence artificielle",
@@ -174,20 +198,26 @@ export const seoMetadata: Record<SupportedLocale, SEOMetadata> = {
       "édition magique",
       "écriture IA",
       "outils IA",
+      "générateur de publicité IA",
+      "marketing IA",
+      "vidéo produit publicité",
+      "générateur TikTok",
+      "générateur Shorts",
+      "générateur Reels",
     ],
     ogTitle: "Chapax — Agent IA Universel pour le Web",
     ogDescription:
-      "Application web + extension de navigateur avec Magic Edit. Discutez avec les principaux modèles d'IA, recherche approfondie, programmation en binôme, corrections de texte instantanées sur n'importe quelle page.",
+      "Application web + extension avec Magic Edit. Discutez avec des modèles d’IA, faites de la recherche approfondie et créez des publicités/vidéos produit pour TikTok, Shorts et Reels.",
     twitterTitle: "Chapax — Agent IA Universel pour le Web",
     twitterDescription:
-      "Agent IA universel : chat, recherche, code et édition avec l'IA. Application web puissante + extension de navigateur avec Magic Edit.",
+      "Agent IA universel : chat, recherche, code et édition — plus publicités, vidéos produit et contenu générés plus vite.",
     siteName: "Chapax",
   },
   ar: {
     title: "Chapax — وكيل الذكاء الاصطناعي الشامل للويب",
     titleTemplate: "Chapax — %s",
     description:
-      "وكيل ذكاء اصطناعي شامل مع تطبيق ويب قوي وامتداد متصفح. تحدث مع نماذج الذكاء الاصطناعي، البحث العميق، البرمجة الثنائية، التفكير العميق وMagic Edit لإصلاحات النص الفورية على أي صفحة.",
+      "وكيل ذكاء اصطناعي شامل مع تطبيق ويب قوي وامتداد متصفح. دردشة، بحث عميق، برمجة ثنائية، تفكير عميق وMagic Edit — بالإضافة إلى إنشاء إعلانات وفيديوهات منتجات ومحتوى لـ TikTok وShorts وReels.",
     keywords: [
       "مساعد الذكاء الاصطناعي",
       "الذكاء الاصطناعي",
@@ -207,13 +237,19 @@ export const seoMetadata: Record<SupportedLocale, SEOMetadata> = {
       "التحرير السحري",
       "الكتابة بالذكاء الاصطناعي",
       "أدوات الذكاء الاصطناعي",
+      "مولد إعلانات بالذكاء الاصطناعي",
+      "تسويق بالذكاء الاصطناعي",
+      "إعلانات فيديو للمنتجات",
+      "مولد إعلانات TikTok",
+      "مولد Shorts",
+      "مولد Reels",
     ],
     ogTitle: "Chapax — وكيل الذكاء الاصطناعي الشامل للويب",
     ogDescription:
-      "تطبيق ويب + امتداد متصفح مع Magic Edit. تحدث مع نماذج الذكاء الاصطناعي الرائدة، البحث العميق، البرمجة الثنائية، إصلاحات النص الفورية على أي صفحة.",
+      "تطبيق ويب + امتداد متصفح مع Magic Edit. دردشة وبحث وبرمجة — وإنشاء إعلانات وفيديوهات منتجات بسرعة لـ TikTok وShorts وReels.",
     twitterTitle: "Chapax — وكيل الذكاء الاصطناعي الشامل للويب",
     twitterDescription:
-      "وكيل ذكاء اصطناعي شامل: الدردشة، البحث، الكود والتحرير بالذكاء الاصطناعي. تطبيق ويب قوي + امتداد متصفح مع Magic Edit.",
+      "وكيل ذكاء اصطناعي شامل: دردشة وبحث وكود وتحرير — بالإضافة إلى إنشاء الإعلانات والمحتوى بسرعة.",
     siteName: "Chapax",
   },
 };

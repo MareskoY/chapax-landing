@@ -3,6 +3,7 @@ import Header from "../components/landing/Header";
 import HeroSection from "../components/landing/HeroSection";
 import PlatformsSection from "../components/landing/PlatformsSection";
 import ModelsSection from "../components/landing/ModelsSection";
+import AdsSection from "../components/landing/AdsSection";
 import FeaturesSection from "../components/landing/FeaturesSection";
 import Footer from "../components/landing/Footer";
 import SEOHead from "../lib/seo/SEOHead";
@@ -33,6 +34,8 @@ export default function Home() {
         <PlatformsSection />
         
         <ModelsSection />
+
+        <AdsSection />
         
         <FeaturesSection />
       </main>
