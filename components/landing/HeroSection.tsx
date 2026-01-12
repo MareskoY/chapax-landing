@@ -30,7 +30,7 @@ export default function HeroSection() {
             
             <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8 lg:mb-10 leading-relaxed">
               <Trans id="Chat, search, pair coding, deep thinking, generate images, edit photos, create videos, and bring photos to life — plus Magic Edit for instant text fixes and transformations.">
-                Chat, search, pair coding, deep thinking, generate images, edit photos, create videos, and bring photos to life — plus Magic Edit for instant text fixes and transformations.
+                Chat, search, pair coding, deep thinking, generate images, edit photos, create videos, and bring photos to life — plus Magic Edit for instant text fixes and transformations. Bring your ideas to life and create ads & content in minutes.
               </Trans>
             </p>
 
