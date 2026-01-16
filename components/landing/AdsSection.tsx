@@ -3,6 +3,14 @@ import { motion } from "framer-motion";
 import { Megaphone, Video, LayoutGrid, Sparkles } from "lucide-react";
 
 export default function AdsSection() {
+  const adExample = {
+    videoUrl: "https://d1q70pf5vjeyhc.cloudfront.net/predictions/7de5076e61594a248018b79d270e34a8/1.mp4",
+    images: [
+      "https://d1q70pf5vjeyhc.cloudfront.net/media/92d2d4ca66f84793adcb20742b15d262/images/1764495453554842282_NT0Z7eml.jpg",
+      "https://d1q70pf5vjeyhc.cloudfront.net/media/92d2d4ca66f84793adcb20742b15d262/images/1764606363953018452_WXUT0YWU.jpg",
+    ],
+  } as const;
+
   const cards = [
     {
       id: "product-video",
@@ -90,6 +98,75 @@ export default function AdsSection() {
             </motion.div>
           ))}
         </div>
+
+        {/* Example */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="mt-10 sm:mt-12 rounded-3xl border border-foreground/10 bg-gradient-to-b from-card/70 to-card/40 backdrop-blur p-5 sm:p-6 lg:p-8"
+        >
+          <div className="text-center mb-6">
+            <div className="text-xl sm:text-2xl font-bold">
+              <Trans id="ads.example.title">Video example</Trans>
+            </div>
+            <div className="text-sm text-muted-foreground">
+              <Trans id="ads.example.subtitle">From product photos and a prompt to an ad-ready clip.</Trans>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-5 lg:gap-6 items-start">
+            <div className="rounded-2xl overflow-hidden border border-foreground/10 bg-black/10 shadow-lg">
+              <div className="relative aspect-[16/9]">
+                <video
+                  key={adExample.videoUrl}
+                  src={adExample.videoUrl}
+                  className="absolute inset-0 h-full w-full object-cover"
+                  muted
+                  playsInline
+                  loop
+                  autoPlay
+                  preload="metadata"
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <div className="rounded-2xl border border-foreground/10 bg-background/40 backdrop-blur-sm p-4 sm:p-5">
+                <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
+                  <Trans id="ads.example.promptLabel">Prompt</Trans>
+                </div>
+                <div className="text-sm leading-relaxed">
+                  <Trans id="ads.example.prompt">
+                    A woman in ornate dresses, wearing a necklace and a handbag, is walking on the street.
+                  </Trans>
+                </div>
+              </div>
+
+              <div className="rounded-2xl border border-foreground/10 bg-background/40 backdrop-blur-sm p-4 sm:p-5">
+                <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
+                  <Trans id="ads.example.imagesLabel">Input images</Trans>
+                </div>
+                <div className="grid grid-cols-2 gap-3">
+                  {adExample.images.map((src) => (
+                    <div
+                      key={src}
+                      className="relative overflow-hidden rounded-xl border border-foreground/10 bg-black/10 aspect-[3/4]"
+                    >
+                      <img
+                        src={src}
+                        alt=""
+                        className="absolute inset-0 h-full w-full object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

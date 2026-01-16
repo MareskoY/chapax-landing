@@ -14,54 +14,29 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: components/landing/AdsSection.tsx:10
-msgid "ads.card.productVideo.title"
-msgstr "Publicités vidéo produit"
+#: components/landing/AdsSection.tsx:112
+msgid "ads.example.title"
+msgstr "Exemple vidéo"
 
 #. js-lingui-explicit-id
-#: components/landing/AdsSection.tsx:12
-msgid "ads.card.productVideo.desc"
-msgstr "Utilisez vos photos produit pour générer des vidéos propres, prêtes pour votre marque — idéales pour les ads, landing pages et marketplaces."
+#: components/landing/AdsSection.tsx:115
+msgid "ads.example.subtitle"
+msgstr "À partir de photos produit et d’un prompt, obtenez un clip prêt pour la pub."
 
 #. js-lingui-explicit-id
-#: components/landing/AdsSection.tsx:20
-msgid "ads.card.shorts.title"
-msgstr "Shorts, TikToks & Reels"
+#: components/landing/AdsSection.tsx:138
+msgid "ads.example.promptLabel"
+msgstr "Prompt"
 
 #. js-lingui-explicit-id
-#: components/landing/AdsSection.tsx:22
-msgid "ads.card.shorts.desc"
-msgstr "Créez des vidéos courtes qui arrêtent le scroll avec des hooks, des scènes et des variations — prêtes à publier ou à tester."
+#: components/landing/AdsSection.tsx:141
+msgid "ads.example.prompt"
+msgstr "Une femme en robe ornée, portant un collier et un sac à main, marche dans la rue."
 
 #. js-lingui-explicit-id
-#: components/landing/AdsSection.tsx:30
-msgid "ads.card.cards.title"
-msgstr "Fiches produit & créas"
-
-#. js-lingui-explicit-id
-#: components/landing/AdsSection.tsx:32
-msgid "ads.card.cards.desc"
-msgstr "Générez des fiches produit, bannières et carrousels avec un style cohérent et une itération rapide."
-
-#. js-lingui-explicit-id
-#: components/landing/AdsSection.tsx:40
-msgid "ads.card.variants.title"
-msgstr "Variantes A/B en quelques minutes"
-
-#. js-lingui-explicit-id
-#: components/landing/AdsSection.tsx:42
-msgid "ads.card.variants.desc"
-msgstr "Créez instantanément des angles, des formats et des langues — trouvez ce qui convertit sans tâches répétitives."
-
-#. js-lingui-explicit-id
-#: components/landing/AdsSection.tsx:60
-msgid "ads.title"
-msgstr "Créez des publicités avec l’IA"
-
-#. js-lingui-explicit-id
-#: components/landing/AdsSection.tsx:63
-msgid "ads.subtitle"
-msgstr "Transformez des images produit en vidéos, générez des créas pour votre boutique et publiez du contenu pour n’importe quelle plateforme — plus vite."
+#: components/landing/AdsSection.tsx:149
+msgid "ads.example.imagesLabel"
+msgstr "Images d’entrée"
 
 #. js-lingui-explicit-id
 #: components/landing/PlatformsSection.tsx:10
@@ -119,238 +94,6 @@ msgstr "Choisissez votre plateforme préférée et commencez avec Chapax aujourd
 #: components/landing/PlatformsSection.tsx:100
 msgid "Get Started"
 msgstr "Commencer"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:41
-#: pages/pricing.tsx:153
-msgid "Free"
-msgstr "Gratuit"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:43
-#: pages/pricing.tsx:53
-#: pages/pricing.tsx:222
-#: pages/pricing.tsx:329
-msgid "Get in App"
-msgstr "Obtenir dans l'app"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:45
-msgid "Chat with basic models"
-msgstr "Chat avec des modèles de base"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:51
-msgid "Plus"
-msgstr "Plus"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:55
-msgid "Chat with advanced models"
-msgstr "Chat avec des modèles avancés"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:56
-msgid "Priority access"
-msgstr "Accès prioritaire"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:57
-msgid "Video Generation"
-msgstr "Génération de vidéo"
-
-#. js-lingui-explicit-id
-#: components/landing/Header.tsx:75
-#: pages/pricing.tsx:67
-#: pages/pricing.tsx:94
-msgid "Pricing"
-msgstr "Tarifs"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:97
-msgid "Choose the perfect plan for your AI needs"
-msgstr "Choisissez le plan parfait pour vos besoins en IA"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:106
-msgid "Реквизиты"
-msgstr "Réквизиты"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:112
-msgid "Договор оферты"
-msgstr "Договор оферты"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:138
-msgid "Popular"
-msgstr "Populaire"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:147
-msgid "Best to try the app"
-msgstr "Idéal pour essayer l'app"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:147
-msgid "More headroom and priority"
-msgstr "Plus de marge et priorité"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:154
-#: pages/pricing.tsx:161
-msgid "/mo"
-msgstr "/mois"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:171
-msgid "What you get"
-msgstr "Ce que vous obtenez"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:188
-msgid "≈ chat replies"
-msgstr "≈ réponses de chat"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:192
-msgid "≈ photo analysis"
-msgstr "≈ analyse de photos"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:196
-msgid "≈ image gens"
-msgstr "≈ générations d'image"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:200
-msgid "≈ edit photos"
-msgstr "≈ éditions de photos"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:210
-msgid "This plan is free for everyone."
-msgstr "Ce plan est gratuit pour tout le monde."
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:239
-msgid "One‑time token packs"
-msgstr "Packs de jetons uniques"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:242
-msgid "Need more tokens? Get them as you go"
-msgstr "Besoin de plus de jetons ? Obtenez-les au fur et à mesure"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:263
-msgid "tokens/mo"
-msgstr "jetons/mois"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:269
-#: pages/pricing.tsx:275
-msgid "What are tokens?"
-msgstr "Que sont les jetons ?"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:277
-msgid "Tokens explainer"
-msgstr "Explication des jetons"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:311
-msgid "tokens"
-msgstr "jetons"
-
-#. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:36
-msgid "Powered by Leading AI Models"
-msgstr "Propulsé par les modèles d'IA leaders"
-
-#. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:39
-msgid "Access the most advanced AI models from top providers, all in one place"
-msgstr "Accédez aux modèles d'IA les plus avancés des meilleurs fournisseurs, le tout en un seul endroit"
-
-#. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:76
-msgid "NEW"
-msgstr "NOUVEAU"
-
-#. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:93
-msgid "And many more models coming soon"
-msgstr "Et bien d'autres modèles à venir"
-
-#. js-lingui-explicit-id
-#: components/landing/Header.tsx:66
-msgid "Features"
-msgstr "Fonctionnalités"
-
-#. js-lingui-explicit-id
-#: components/landing/Header.tsx:69
-msgid "Models"
-msgstr "Modèles"
-
-#. js-lingui-explicit-id
-#: components/landing/Header.tsx:72
-msgid "Platforms"
-msgstr "Plateformes"
-
-#. js-lingui-explicit-id
-#: components/landing/Header.tsx:85
-msgid "Toggle theme"
-msgstr "Changer le thème"
-
-#. js-lingui-explicit-id
-#: components/landing/Header.tsx:103
-msgid "Language"
-msgstr "Langue"
-
-#. js-lingui-explicit-id
-#: components/landing/Header.tsx:123
-msgid "Sign up"
-msgstr "S'inscrire"
-
-#. js-lingui-explicit-id
-#: components/landing/Header.tsx:129
-msgid "Download App"
-msgstr "Télécharger l'application"
-
-#. js-lingui-explicit-id
-#: components/landing/HeroSection.tsx:28
-msgid "Universal AI agent."
-msgstr "Agent IA universel."
-
-#. js-lingui-explicit-id
-#: components/landing/HeroSection.tsx:32
-msgid "Chat, search, pair coding, deep thinking, generate images, edit photos, create videos, and bring photos to life — plus Magic Edit for instant text fixes and transformations."
-msgstr "Chat, recherche, programmation en binôme, réflexion profonde, génération d'images, édition de photos, création de vidéos et donner vie aux photos — plus Magic Edit pour des corrections et transformations de texte instantanées. Donnez vie à vos idées et créez des publicités et du contenu en quelques minutes."
-
-#. js-lingui-explicit-id
-#: components/landing/HeroSection.tsx:62
-#: components/landing/HeroSection.tsx:115
-msgid "Download on the"
-msgstr "Télécharger sur"
-
-#. js-lingui-explicit-id
-#: components/landing/HeroSection.tsx:65
-#: components/landing/HeroSection.tsx:118
-msgid "App Store"
-msgstr "App Store"
-
-#. js-lingui-explicit-id
-#: components/landing/HeroSection.tsx:81
-#: components/landing/HeroSection.tsx:134
-msgid "Get it on"
-msgstr "Disponible sur"
-
-#. js-lingui-explicit-id
-#: components/landing/HeroSection.tsx:84
-#: components/landing/HeroSection.tsx:137
-msgid "Google Play"
-msgstr "Google Play"
 
 #. js-lingui-explicit-id
 #: components/landing/Footer.tsx:15
@@ -411,6 +154,152 @@ msgstr "Supprimer le compte"
 #: components/landing/Footer.tsx:99
 msgid "footer.tagline"
 msgstr "Rapide. Minimal. Utile."
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:66
+msgid "Features"
+msgstr "Fonctionnalités"
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:69
+msgid "Models"
+msgstr "Modèles"
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:72
+msgid "Platforms"
+msgstr "Plateformes"
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:75
+#: pages/pricing.tsx:67
+#: pages/pricing.tsx:94
+msgid "Pricing"
+msgstr "Tarifs"
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:85
+msgid "Toggle theme"
+msgstr "Changer le thème"
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:103
+msgid "Language"
+msgstr "Langue"
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:123
+msgid "Sign up"
+msgstr "S'inscrire"
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:129
+msgid "Download App"
+msgstr "Télécharger l'application"
+
+#. js-lingui-explicit-id
+#: components/landing/HeroSection.tsx:28
+msgid "Universal AI agent."
+msgstr "Agent IA universel."
+
+#. js-lingui-explicit-id
+#: components/landing/HeroSection.tsx:32
+msgid "Chat, search, pair coding, deep thinking, generate images, edit photos, create videos, and bring photos to life — plus Magic Edit for instant text fixes and transformations."
+msgstr "Chat, recherche, programmation en binôme, réflexion profonde, génération d'images, édition de photos, création de vidéos et donner vie aux photos — plus Magic Edit pour des corrections et transformations de texte instantanées. Donnez vie à vos idées et créez des publicités et du contenu en quelques minutes."
+
+#. js-lingui-explicit-id
+#: components/landing/HeroSection.tsx:62
+#: components/landing/HeroSection.tsx:115
+msgid "Download on the"
+msgstr "Télécharger sur"
+
+#. js-lingui-explicit-id
+#: components/landing/HeroSection.tsx:65
+#: components/landing/HeroSection.tsx:118
+msgid "App Store"
+msgstr "App Store"
+
+#. js-lingui-explicit-id
+#: components/landing/HeroSection.tsx:81
+#: components/landing/HeroSection.tsx:134
+msgid "Get it on"
+msgstr "Disponible sur"
+
+#. js-lingui-explicit-id
+#: components/landing/HeroSection.tsx:84
+#: components/landing/HeroSection.tsx:137
+msgid "Google Play"
+msgstr "Google Play"
+
+#. js-lingui-explicit-id
+#: components/landing/AdsSection.tsx:18
+msgid "ads.card.productVideo.title"
+msgstr "Publicités vidéo produit"
+
+#. js-lingui-explicit-id
+#: components/landing/AdsSection.tsx:20
+msgid "ads.card.productVideo.desc"
+msgstr "Utilisez vos photos produit pour générer des vidéos propres, prêtes pour votre marque — idéales pour les ads, landing pages et marketplaces."
+
+#. js-lingui-explicit-id
+#: components/landing/AdsSection.tsx:28
+msgid "ads.card.shorts.title"
+msgstr "Shorts, TikToks & Reels"
+
+#. js-lingui-explicit-id
+#: components/landing/AdsSection.tsx:30
+msgid "ads.card.shorts.desc"
+msgstr "Créez des vidéos courtes qui arrêtent le scroll avec des hooks, des scènes et des variations — prêtes à publier ou à tester."
+
+#. js-lingui-explicit-id
+#: components/landing/AdsSection.tsx:38
+msgid "ads.card.cards.title"
+msgstr "Fiches produit & créas"
+
+#. js-lingui-explicit-id
+#: components/landing/AdsSection.tsx:40
+msgid "ads.card.cards.desc"
+msgstr "Générez des fiches produit, bannières et carrousels avec un style cohérent et une itération rapide."
+
+#. js-lingui-explicit-id
+#: components/landing/AdsSection.tsx:48
+msgid "ads.card.variants.title"
+msgstr "Variantes A/B en quelques minutes"
+
+#. js-lingui-explicit-id
+#: components/landing/AdsSection.tsx:50
+msgid "ads.card.variants.desc"
+msgstr "Créez instantanément des angles, des formats et des langues — trouvez ce qui convertit sans tâches répétitives."
+
+#. js-lingui-explicit-id
+#: components/landing/AdsSection.tsx:68
+msgid "ads.title"
+msgstr "Créez des publicités avec l’IA"
+
+#. js-lingui-explicit-id
+#: components/landing/AdsSection.tsx:71
+msgid "ads.subtitle"
+msgstr "Transformez des images produit en vidéos, générez des créas pour votre boutique et publiez du contenu pour n’importe quelle plateforme — plus vite."
+
+#. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:36
+msgid "Powered by Leading AI Models"
+msgstr "Propulsé par les modèles d'IA leaders"
+
+#. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:39
+msgid "Access the most advanced AI models from top providers, all in one place"
+msgstr "Accédez aux modèles d'IA les plus avancés des meilleurs fournisseurs, le tout en un seul endroit"
+
+#. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:76
+msgid "NEW"
+msgstr "NOUVEAU"
+
+#. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:93
+msgid "And many more models coming soon"
+msgstr "Et bien d'autres modèles à venir"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:28
@@ -621,6 +510,227 @@ msgstr "Commencez à créer maintenant"
 #: components/landing/FeaturesSection.tsx:387
 msgid "View Pricing"
 msgstr "Voir les tarifs"
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:216
+msgid "aiAvatar.step1"
+msgstr "Décris ton idée et obtiens un mini plan : scène, style et actions de l’avatar."
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:224
+msgid "aiAvatar.step2"
+msgstr "Génère un avatar IA et affine le rendu (cheveux, visage, tenue) dans un éditeur photo pour coller à ta marque."
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:232
+msgid "aiAvatar.step3"
+msgstr "Filme (ou choisis) une vidéo de référence avec le bon mouvement de caméra, la lumière et le rythme."
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:240
+msgid "aiAvatar.step4"
+msgstr "Combine l’image de l’avatar avec la vidéo de référence pour un résultat propre et naturel."
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:260
+msgid "aiAvatar.title"
+msgstr "Avatar IA pour vidéos"
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:263
+msgid "aiAvatar.subtitle"
+msgstr "Un flux simple : vidéo de référence + image d’avatar → vidéo prête à poster."
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:285
+msgid "aiAvatar.stepLabel"
+msgstr "Étape {n}"
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:305
+msgid "aiAvatar.examplesTitle"
+msgstr "Exemples"
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:308
+msgid "aiAvatar.examplesSubtitle"
+msgstr "Vidéo de référence + avatar IA = résultat généré"
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:320
+msgid "aiAvatar.refVideo"
+msgstr "Vidéo de référence"
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:334
+msgid "aiAvatar.avatarImage"
+msgstr "Avatar IA"
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:346
+msgid "aiAvatar.mute"
+msgstr "Son coupé"
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:347
+msgid "aiAvatar.unmute"
+msgstr "Son activé"
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:348
+msgid "aiAvatar.result"
+msgstr "Résultat"
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:363
+msgid "Previous example"
+msgstr "Exemple précédent"
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:396
+msgid "aiAvatar.example"
+msgstr "Exemple {n}"
+
+#. js-lingui-explicit-id
+#: components/landing/AiAvatarSection.tsx:411
+msgid "Next example"
+msgstr "Exemple suivant"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:41
+#: pages/pricing.tsx:153
+msgid "Free"
+msgstr "Gratuit"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:43
+#: pages/pricing.tsx:53
+#: pages/pricing.tsx:222
+#: pages/pricing.tsx:329
+msgid "Get in App"
+msgstr "Obtenir dans l'app"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:45
+msgid "Chat with basic models"
+msgstr "Chat avec des modèles de base"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:51
+msgid "Plus"
+msgstr "Plus"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:55
+msgid "Chat with advanced models"
+msgstr "Chat avec des modèles avancés"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:56
+msgid "Priority access"
+msgstr "Accès prioritaire"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:57
+msgid "Video Generation"
+msgstr "Génération de vidéo"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:97
+msgid "Choose the perfect plan for your AI needs"
+msgstr "Choisissez le plan parfait pour vos besoins en IA"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:106
+msgid "Реквизиты"
+msgstr "Réквизиты"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:112
+msgid "Договор оферты"
+msgstr "Договор оферты"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:138
+msgid "Popular"
+msgstr "Populaire"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:147
+msgid "Best to try the app"
+msgstr "Idéal pour essayer l'app"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:147
+msgid "More headroom and priority"
+msgstr "Plus de marge et priorité"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:154
+#: pages/pricing.tsx:161
+msgid "/mo"
+msgstr "/mois"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:171
+msgid "What you get"
+msgstr "Ce que vous obtenez"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:188
+msgid "≈ chat replies"
+msgstr "≈ réponses de chat"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:192
+msgid "≈ photo analysis"
+msgstr "≈ analyse de photos"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:196
+msgid "≈ image gens"
+msgstr "≈ générations d'image"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:200
+msgid "≈ edit photos"
+msgstr "≈ éditions de photos"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:210
+msgid "This plan is free for everyone."
+msgstr "Ce plan est gratuit pour tout le monde."
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:239
+msgid "One‑time token packs"
+msgstr "Packs de jetons uniques"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:242
+msgid "Need more tokens? Get them as you go"
+msgstr "Besoin de plus de jetons ? Obtenez-les au fur et à mesure"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:263
+msgid "tokens/mo"
+msgstr "jetons/mois"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:269
+#: pages/pricing.tsx:275
+msgid "What are tokens?"
+msgstr "Que sont les jetons ?"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:277
+msgid "Tokens explainer"
+msgstr "Explication des jetons"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:311
+msgid "tokens"
+msgstr "jetons"
 
 #. js-lingui-explicit-id
 #: components/landing/Footer.tsx:
