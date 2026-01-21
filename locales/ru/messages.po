@@ -14,29 +14,157 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. js-lingui-explicit-id
-#: components/landing/AdsSection.tsx:112
-msgid "ads.example.title"
-msgstr "Пример видео"
+#: pages/pricing.tsx:55
+msgid "Unlimited basic models"
+msgstr "Безлимитные базовые модели"
 
 #. js-lingui-explicit-id
-#: components/landing/AdsSection.tsx:115
-msgid "ads.example.subtitle"
-msgstr "Из фото товара и промпта — в готовый ролик для рекламы."
+#: pages/pricing.tsx:57
+msgid "Pro Image generation models"
+msgstr "Pro‑модели для генерации изображений"
 
 #. js-lingui-explicit-id
-#: components/landing/AdsSection.tsx:138
-msgid "ads.example.promptLabel"
-msgstr "Промпт"
+#: pages/pricing.tsx:41
+#: pages/pricing.tsx:155
+msgid "Free"
+msgstr "Бесплатно"
 
 #. js-lingui-explicit-id
-#: components/landing/AdsSection.tsx:141
-msgid "ads.example.prompt"
-msgstr "Женщина в нарядном платье, с ожерельем и сумкой, идет по улице."
+#: pages/pricing.tsx:43
+#: pages/pricing.tsx:53
+#: pages/pricing.tsx:224
+#: pages/pricing.tsx:331
+msgid "Get in App"
+msgstr "Оформить в приложении"
 
 #. js-lingui-explicit-id
-#: components/landing/AdsSection.tsx:149
-msgid "ads.example.imagesLabel"
-msgstr "Исходные изображения"
+#: pages/pricing.tsx:45
+msgid "Chat with basic models"
+msgstr "Чат с базовыми моделями"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:51
+msgid "Plus"
+msgstr "Плюс"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:56
+msgid "Chat with advanced models"
+msgstr "Чат с продвинутыми моделями"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:58
+msgid "Priority access"
+msgstr "Приоритетный доступ"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:59
+msgid "Video Generation"
+msgstr "Генерация видео"
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:82
+#: pages/pricing.tsx:69
+#: pages/pricing.tsx:96
+msgid "Pricing"
+msgstr "Тарифы"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:99
+msgid "Choose the perfect plan for your AI needs"
+msgstr "Выберите идеальный тариф под ваши задачи в ИИ"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:108
+msgid "Реквизиты"
+msgstr "Реквизиты"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:114
+msgid "Договор оферты"
+msgstr "Договор оферты"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:140
+msgid "Popular"
+msgstr "Популярный"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:149
+msgid "Best to try the app"
+msgstr "Лучше всего, чтобы попробовать приложение"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:149
+msgid "More headroom and priority"
+msgstr "Больше лимитов и приоритет"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:156
+#: pages/pricing.tsx:163
+msgid "/mo"
+msgstr "/мес"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:173
+msgid "What you get"
+msgstr "Что входит"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:190
+msgid "≈ chat replies"
+msgstr "≈ ответов в чате"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:194
+msgid "≈ photo analysis"
+msgstr "≈ анализ фотографий"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:198
+msgid "≈ image gens"
+msgstr "≈ генераций изображений"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:202
+msgid "≈ edit photos"
+msgstr "≈ редактирований фото"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:212
+msgid "This plan is free for everyone."
+msgstr "Эта подписка бесплатна для всех."
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:241
+msgid "One‑time token packs"
+msgstr "Разовые наборы токенов"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:244
+msgid "Need more tokens? Get them as you go"
+msgstr "Нужно больше токенов? Покупайте их по мере надобности."
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:265
+msgid "tokens/mo"
+msgstr "токенов/мес"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:271
+#: pages/pricing.tsx:277
+msgid "What are tokens?"
+msgstr "Что такое токены?"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:279
+msgid "Tokens explainer"
+msgstr "Объяснение токенов"
+
+#. js-lingui-explicit-id
+#: pages/pricing.tsx:313
+msgid "tokens"
+msgstr "токенов"
 
 #. js-lingui-explicit-id
 #: components/landing/PlatformsSection.tsx:10
@@ -94,6 +222,26 @@ msgstr "Выберите удобную платформу и начните п�
 #: components/landing/PlatformsSection.tsx:100
 msgid "Get Started"
 msgstr "Начать"
+
+#. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:36
+msgid "Powered by Leading AI Models"
+msgstr "Работает на ведущих ИИ‑моделях"
+
+#. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:39
+msgid "Access the most advanced AI models from top providers, all in one place"
+msgstr "Доступ к самым продвинутым моделям ИИ от лучших провайдеров в одном месте"
+
+#. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:76
+msgid "NEW"
+msgstr "NEW"
+
+#. js-lingui-explicit-id
+#: components/landing/ModelsSection.tsx:93
+msgid "And many more models coming soon"
+msgstr "И ещё больше моделей скоро появится"
 
 #. js-lingui-explicit-id
 #: components/landing/Footer.tsx:15
@@ -156,48 +304,6 @@ msgid "footer.tagline"
 msgstr "Быстро. Минимально. Полезно."
 
 #. js-lingui-explicit-id
-#: components/landing/Header.tsx:66
-msgid "Features"
-msgstr "Возможности"
-
-#. js-lingui-explicit-id
-#: components/landing/Header.tsx:69
-msgid "Models"
-msgstr "Модели"
-
-#. js-lingui-explicit-id
-#: components/landing/Header.tsx:72
-msgid "Platforms"
-msgstr "Платформы"
-
-#. js-lingui-explicit-id
-#: components/landing/Header.tsx:75
-#: pages/pricing.tsx:67
-#: pages/pricing.tsx:94
-msgid "Pricing"
-msgstr "Тарифы"
-
-#. js-lingui-explicit-id
-#: components/landing/Header.tsx:85
-msgid "Toggle theme"
-msgstr "Переключить тему"
-
-#. js-lingui-explicit-id
-#: components/landing/Header.tsx:103
-msgid "Language"
-msgstr "Язык"
-
-#. js-lingui-explicit-id
-#: components/landing/Header.tsx:123
-msgid "Sign up"
-msgstr "Зарегистрироваться"
-
-#. js-lingui-explicit-id
-#: components/landing/Header.tsx:129
-msgid "Download App"
-msgstr "Скачать приложение"
-
-#. js-lingui-explicit-id
 #: components/landing/HeroSection.tsx:28
 msgid "Universal AI agent."
 msgstr "Универсальный ИИ‑агент."
@@ -230,6 +336,41 @@ msgstr "Доступно в"
 #: components/landing/HeroSection.tsx:137
 msgid "Google Play"
 msgstr "Google Play"
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:73
+msgid "Features"
+msgstr "Возможности"
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:76
+msgid "Models"
+msgstr "Модели"
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:79
+msgid "Platforms"
+msgstr "Платформы"
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:92
+msgid "Toggle theme"
+msgstr "Переключить тему"
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:110
+msgid "Language"
+msgstr "Язык"
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:130
+msgid "Sign up"
+msgstr "Зарегистрироваться"
+
+#. js-lingui-explicit-id
+#: components/landing/Header.tsx:136
+msgid "Download App"
+msgstr "Скачать приложение"
 
 #. js-lingui-explicit-id
 #: components/landing/AdsSection.tsx:18
@@ -282,24 +423,29 @@ msgid "ads.subtitle"
 msgstr "Превращайте фото товара в видео, генерируйте креативы для витрины и выпускайте контент для любой платформы — быстрее."
 
 #. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:36
-msgid "Powered by Leading AI Models"
-msgstr "Работает на ведущих ИИ‑моделях"
+#: components/landing/AdsSection.tsx:112
+msgid "ads.example.title"
+msgstr "Пример видео"
 
 #. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:39
-msgid "Access the most advanced AI models from top providers, all in one place"
-msgstr "Доступ к самым продвинутым моделям ИИ от лучших провайдеров в одном месте"
+#: components/landing/AdsSection.tsx:115
+msgid "ads.example.subtitle"
+msgstr "Из фото товара и промпта — в готовый ролик для рекламы."
 
 #. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:76
-msgid "NEW"
-msgstr "NEW"
+#: components/landing/AdsSection.tsx:138
+msgid "ads.example.promptLabel"
+msgstr "Промпт"
 
 #. js-lingui-explicit-id
-#: components/landing/ModelsSection.tsx:93
-msgid "And many more models coming soon"
-msgstr "И ещё больше моделей скоро появится"
+#: components/landing/AdsSection.tsx:141
+msgid "ads.example.prompt"
+msgstr "Женщина в нарядном платье, с ожерельем и сумкой, идет по улице."
+
+#. js-lingui-explicit-id
+#: components/landing/AdsSection.tsx:149
+msgid "ads.example.imagesLabel"
+msgstr "Исходные изображения"
 
 #. js-lingui-explicit-id
 #: components/landing/FeaturesSection.tsx:28
@@ -595,142 +741,6 @@ msgstr "Пример {n}"
 #: components/landing/AiAvatarSection.tsx:411
 msgid "Next example"
 msgstr "Следующий пример"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:41
-#: pages/pricing.tsx:153
-msgid "Free"
-msgstr "Бесплатно"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:43
-#: pages/pricing.tsx:53
-#: pages/pricing.tsx:222
-#: pages/pricing.tsx:329
-msgid "Get in App"
-msgstr "Оформить в приложении"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:45
-msgid "Chat with basic models"
-msgstr "Чат с базовыми моделями"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:51
-msgid "Plus"
-msgstr "Плюс"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:55
-msgid "Chat with advanced models"
-msgstr "Чат с продвинутыми моделями"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:56
-msgid "Priority access"
-msgstr "Приоритетный доступ"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:57
-msgid "Video Generation"
-msgstr "Генерация видео"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:97
-msgid "Choose the perfect plan for your AI needs"
-msgstr "Выберите идеальный тариф под ваши задачи в ИИ"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:106
-msgid "Реквизиты"
-msgstr "Реквизиты"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:112
-msgid "Договор оферты"
-msgstr "Договор оферты"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:138
-msgid "Popular"
-msgstr "Популярный"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:147
-msgid "Best to try the app"
-msgstr "Лучше всего, чтобы попробовать приложение"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:147
-msgid "More headroom and priority"
-msgstr "Больше лимитов и приоритет"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:154
-#: pages/pricing.tsx:161
-msgid "/mo"
-msgstr "/мес"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:171
-msgid "What you get"
-msgstr "Что входит"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:188
-msgid "≈ chat replies"
-msgstr "≈ ответов в чате"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:192
-msgid "≈ photo analysis"
-msgstr "≈ анализ фотографий"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:196
-msgid "≈ image gens"
-msgstr "≈ генераций изображений"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:200
-msgid "≈ edit photos"
-msgstr "≈ редактирований фото"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:210
-msgid "This plan is free for everyone."
-msgstr "Эта подписка бесплатна для всех."
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:239
-msgid "One‑time token packs"
-msgstr "Разовые наборы токенов"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:242
-msgid "Need more tokens? Get them as you go"
-msgstr "Нужно больше токенов? Покупайте их по мере надобности."
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:263
-msgid "tokens/mo"
-msgstr "токенов/мес"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:269
-#: pages/pricing.tsx:275
-msgid "What are tokens?"
-msgstr "Что такое токены?"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:277
-msgid "Tokens explainer"
-msgstr "Объяснение токенов"
-
-#. js-lingui-explicit-id
-#: pages/pricing.tsx:311
-msgid "tokens"
-msgstr "токенов"
 
 #. js-lingui-explicit-id
 #: components/landing/Footer.tsx:

@@ -52,7 +52,9 @@ export default function PricingPage({ isRussia }: { isRussia: boolean }) {
         priceLabel: currencyLabel.replace(/^€\s*/, ""),
         cta: <Trans id="Get in App">Get in App</Trans>,
         features: [
+          <Trans id="Unlimited basic models">Unlimited basic models</Trans>,
           <Trans id="Chat with advanced models">Chat with advanced models</Trans>,
+          <Trans id="Pro Image generation models">Pro Image generation models</Trans>,
           <Trans id="Priority access">Priority access</Trans>,
           <Trans id="Video Generation">Video Generation</Trans>,
         ],
@@ -194,11 +196,11 @@ export default function PricingPage({ isRussia }: { isRussia: boolean }) {
                     </li>
                     <li className="flex items-center justify-between">
                       <span className="text-muted-foreground"><Trans id="≈ image gens">≈ image gens</Trans></span>
-                      <span className="tabular-nums font-semibold">{p.id === "FREE" ? 4 : 900}</span>
+                      <span className="tabular-nums font-semibold">{p.id === "FREE" ? 4 : 500}</span>
                     </li>
                     <li className="flex items-center justify-between">
                       <span className="text-muted-foreground"><Trans id="≈ edit photos">≈ edit photos</Trans></span>
-                      <span className="tabular-nums font-semibold">{p.id === "FREE" ? 5 : 1150}</span>
+                      <span className="tabular-nums font-semibold">{p.id === "FREE" ? 5 : 600}</span>
                     </li>
                   </ul>
                 </div>
