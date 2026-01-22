@@ -13,6 +13,7 @@ export default function Privacy() {
         <meta name="description" content="Privacy Policy for ChapaX browser extension and website" />
       </Head>
 
+
       <header className="relative z-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
           <div className="flex items-center justify-between py-4 sm:py-6">
